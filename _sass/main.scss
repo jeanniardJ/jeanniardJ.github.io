@@ -1,0 +1,205 @@
+/* couleur initiale au projet */
+$backgroundColor: #EBEBEB;
+$bodyColor: #000000;
+$colorBleu: #0055c8;
+
+$bodyFont: Arial, Helvetica, sans-serif;
+
+$degHeaderN: -3deg;
+$degHeaderP: 3deg;
+
+* {
+  box-sizing: border-box; /*viewport*/
+}
+
+html, body {
+  margin: 0;
+}
+
+body {
+  background: $backgroundColor;
+  color: $bodyColor;
+  font-family: $bodyFont;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+a {
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+button {
+  width: 5rem;
+  height: 2rem;
+  background-color: #A6A6A6;
+  border: 0.1rem solid #707070;
+  border-radius: 0.2rem;
+
+  a {
+    color: $backgroundColor;
+  }
+
+}
+
+.diagonal {
+  transform: skewY($degHeaderN);
+}
+
+.header {
+  transform-origin: 0 100%;
+
+  h1, button {
+    transform: skewY($degHeaderP);
+  }
+}
+
+.header, .footer{
+  height: 7rem;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  background-color: $colorBleu;
+
+  h1 {
+    padding-top: 1rem;
+    padding-left: 2rem;
+    color: white;
+    position: absolute;
+  }
+
+  button {
+    float: right;
+    margin-top: 6.5rem;
+    margin-right: 3.2rem;
+  }
+}
+
+main {
+  padding: 8rem 0;
+  .profil {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+
+    .desc {
+      width: 100%;
+      padding-right: 3px;
+      align-self: start;
+      p {
+        margin: 0;
+      }
+    }
+
+    .avatar {
+      padding-left: 3px;
+      align-self: end;
+      img {
+        border-radius: 0.3rem;
+      }
+    }
+  }
+
+  .portfolio {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-around;
+
+    .project {
+      background-color: white;
+      border-radius: 0.3rem;
+      border: 1px solid $colorBleu;
+      width: 40%;
+    }
+
+    h2 {
+      text-align: center;
+
+      a {
+        color: $colorBleu;
+      }
+    }
+
+    p, hr {
+      display: none;
+    }
+  }
+
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: -40px;
+  background-color: $colorBleu;
+
+  p {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0rem;
+    color: white;
+    transform: skewY($degHeaderP);
+    position: absolute;
+    bottom: 3rem;
+  }
+}
+
+@media all and (min-width: 640px) {
+  .header {
+    button {
+      margin-right: 6rem;
+    }
+  }
+
+  main {
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+
+    .portfolio {
+      justify-content: space-between;
+    }
+
+    .project{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 48%!important;
+
+      p, hr{
+        display: block;
+      }
+
+      h2, hr{
+        margin: 0;
+      }
+
+      h2{
+        width: 30%;
+      }
+
+      hr{
+        margin: 2px;
+        height: 90%;
+        width: 1%;
+        border: none;
+        border-left: 1px dashed;
+      }
+
+      p{
+        margin: 0;
+        padding: 2px;
+        width: 60%;
+      }
+    }
+  }
+
+}

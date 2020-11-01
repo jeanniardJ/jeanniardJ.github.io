@@ -1,0 +1,23 @@
+lang: fr_FR
+url: "https://jonathan-jeanniard.fr" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "Jjeanniard" # the name of your site, e.g. ACME Corp.
+tagline: "" #bref desc
+description: "" #desc
+
+google_analytics: ""
+
+author:
+  twitter: jjeanniard
+
+twitter:
+  title: My Twitter
+  username: jjeanniard
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
