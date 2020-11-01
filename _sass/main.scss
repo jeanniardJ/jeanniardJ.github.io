@@ -57,7 +57,7 @@ button {
   }
 }
 
-.header, .footer{
+.header, .footer {
   height: 7rem;
 }
 
@@ -81,8 +81,13 @@ button {
 }
 
 main {
-  padding: 8rem 0;
+  padding: 8rem 0.5rem;
+
   .profil {
+    background-color: white;
+    border-radius: 0.3rem;
+    border: 1px solid $colorBleu;
+
     display: flex;
     flex-direction: row;
     padding: 10px;
@@ -91,6 +96,7 @@ main {
       width: 100%;
       padding-right: 3px;
       align-self: start;
+
       p {
         margin: 0;
       }
@@ -99,7 +105,9 @@ main {
     .avatar {
       padding-left: 3px;
       align-self: end;
+
       img {
+        width: 100px;
         border-radius: 0.3rem;
       }
     }
@@ -111,13 +119,13 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 1rem;
-    justify-content: space-around;
+    justify-content: space-between;
 
     .project {
       background-color: white;
       border-radius: 0.3rem;
       border: 1px solid $colorBleu;
-      width: 40%;
+      width: 45%;
     }
 
     h2 {
@@ -141,7 +149,17 @@ main {
   bottom: -40px;
   background-color: $colorBleu;
 
-  p {
+  .copyright {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0rem;
+    color: white;
+    transform: skewY($degHeaderP);
+    position: absolute;
+    bottom: 5rem;
+  }
+
+  .github {
     width: 100%;
     text-align: center;
     margin-bottom: 0rem;
@@ -157,6 +175,15 @@ main {
     button {
       margin-right: 6rem;
     }
+
+  }
+
+  .profil{
+    .avatar {
+      img {
+        width: 150px!important;
+      }
+    }
   }
 
   main {
@@ -164,29 +191,22 @@ main {
     margin-right: auto;
     margin-left: auto;
 
-    .portfolio {
-      justify-content: space-between;
-    }
-
-    .project{
+    .project {
       display: flex;
       flex-direction: row;
       align-items: center;
-      width: 48%!important;
+      width: 48% !important;
 
-      p, hr{
+      p, hr {
         display: block;
       }
 
-      h2, hr{
-        margin: 0;
+      header {
+        width: 45%;
+        text-align: center;
       }
 
-      h2{
-        width: 30%;
-      }
-
-      hr{
+      hr {
         margin: 2px;
         height: 90%;
         width: 1%;
@@ -194,10 +214,9 @@ main {
         border-left: 1px dashed;
       }
 
-      p{
-        margin: 0;
-        padding: 2px;
-        width: 60%;
+      p[class=desc] {
+        padding: 10px;
+        width: 50%;
       }
     }
   }

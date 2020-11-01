@@ -4,37 +4,23 @@
     <div class="desc"><p>{{site.github.owner.bio | default: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
         Adipisci
         animi eligendi id modi, nemo praesentium sed tenetur."}}</p></div>
-    <div class="avatar"><img src="{{site.github.owner.avatar | default: " https://via.placeholder.com/100" }}"
-        alt="Avatar">
+    <div class="avatar"><img src="{{ site.github.owner.avatar_url | default: 'https://via.placeholder.com/100' }}"
+                             alt="Avatar">
     </div>
 </section>
 <section class="portfolio">
-    <article class="project" >
-        <h2><a href="">Projet 1</a></h2>
+    {% for repo in site.github.public_repositories %}
+    {% if repo.fork != true and repo.archived != true and repo.name != "JJeanniard.github.io" and repo.has_pages == true %}
+    <article class="project">
+        <header>
+            <h2><a href="">{{repo.name}}</a></h2>
+            <p>{{ repo.license.name }}</p>
+        </header>
         <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eaque earum eos ex, expedita impedit in neque
-            perspiciatis quasi qui quia sed similique sint velit voluptatibus. Beatae labore perferendis sapiente.</p>
+        <p class="desc">{{ repo.description}}</p>
     </article>
-    <article class="project" >
-        <h2><a href="">Projet 1</a></h2>
-        <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aut consectetur cumque debitis dolor ea
-            facilis labore, laborum molestias placeat possimus, praesentium quaerat quo quod repellendus rerum sapiente
-            similique soluta.</p>
-    </article>
-    <article class="project" >
-        <h2><a href="">Projet 1</a></h2>
-        <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at, corporis est eum fuga fugit id illum modi
-            nesciunt perspiciatis provident repellendus sit tempora ut voluptatem voluptates voluptatum? Quod, quos.</p>
-    </article>
-    <article class="project" >
-        <h2><a href="">Projet 1</a></h2>
-        <hr>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur cumque deserunt doloremque doloribus
-            dolorum esse facere itaque laborum molestiae mollitia non numquam quasi qui, quibusdam quos recusandae
-            tenetur vel voluptatum!</p>
-    </article>
+    {% endif %}
+    {% endfor %}
 </section>
 
 {% include footer.html %}

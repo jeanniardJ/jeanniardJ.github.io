@@ -5,7 +5,7 @@ title: "Jjeanniard" # the name of your site, e.g. ACME Corp.
 tagline: "" #bref desc
 description: "" #desc
 
-google_analytics: ""
+google_analytics: "UA-8529534-11"
 
 author:
   twitter: jjeanniard
@@ -19,5 +19,5 @@ sass:
   style: compressed
 
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-github-metadata
