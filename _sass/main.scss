@@ -1,5 +1,4 @@
 /* couleur initiale au projet */
-$backgroundColor: #EBEBEB;
 $bodyColor: #000000;
 $colorBleu: #0055c8;
 
@@ -17,8 +16,8 @@ html, body {
 }
 
 body {
-  background: $backgroundColor;
-  color: $bodyColor;
+  background: linear-gradient(0deg, rgba(120, 120 ,120, 0.6), rgba(120, 120 ,120, 0.2)), url("../imgs/background_fond.png");
+
   font-family: $bodyFont;
   min-height: 100vh;
 }
@@ -40,7 +39,7 @@ button {
   border-radius: 0.2rem;
 
   a {
-    color: $backgroundColor;
+    color: white;
   }
 
 }
@@ -96,10 +95,6 @@ main {
       width: 100%;
       padding-right: 3px;
       align-self: start;
-
-      p {
-        margin: 0;
-      }
     }
 
     .avatar {
