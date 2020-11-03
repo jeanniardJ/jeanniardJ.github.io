@@ -1,16 +1,18 @@
 {% include header.html %}
 
 <section class="profil">
-    <div class="desc"><p>{{site.github.owner.bio | default: "Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Adipisci
-        animi eligendi id modi, nemo praesentium sed tenetur."}}</p></div>
+    <div class="desc"><p>Bercé par le monde de l'IT, depuis l'âge de 9 ans admiratif du monde de l'informatique, j'ai
+        appris en grande partie le fonctionnement et ça compréhension (rien n'est acquis dans ce monde). Et à trouver
+        depuis une voie en autodidacte de développeur Full stack dans le web avec des technologies comme HTML, CSS, JS,
+        MYSQL. Mais d'autre ne sont pas exclue de mes bagages (C#, JAVA).</p></div>
     <div class="avatar"><img src="{{ site.github.owner.avatar_url | default: 'https://via.placeholder.com/100' }}"
                              alt="Avatar">
     </div>
 </section>
 <section class="portfolio">
     {% for repo in site.github.public_repositories %}
-    {% if repo.fork != true and repo.archived != true and repo.name != "JJeanniard.github.io" and repo.has_pages == true %}
+    {% if repo.fork != true and repo.archived != true and repo.name != "JJeanniard.github.io" and repo.has_pages == true
+    %}
     <article class="project">
         <header>
             <h2><a href="">{{repo.name}}</a></h2>
