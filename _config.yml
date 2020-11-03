@@ -3,7 +3,7 @@ url: "https://jonathan-jeanniard.fr" # the base hostname & protocol for your sit
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Jjeanniard" # the name of your site, e.g. ACME Corp.
 tagline: "" #bref desc
-description: "" #desc
+description: "Ceci est mon portfolio qui représente une liste des projets, auquel j'ai participé ou réalisé dans tout type de langages." #desc
 
 google_analytics: "UA-8529534-11"
 
