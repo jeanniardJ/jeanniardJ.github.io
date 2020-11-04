@@ -5,8 +5,8 @@
         appris en grande partie le fonctionnement et ça compréhension (rien n'est acquis dans ce monde). Et à trouver
         depuis une voie en autodidacte de développeur Full stack dans le web avec des technologies comme HTML, CSS, JS,
         MYSQL. Mais d'autre ne sont pas exclue de mes bagages (C#, JAVA).</p></div>
-    <div class="avatar"><img src="{{ site.github.owner.avatar_url | default: 'https://via.placeholder.com/100' }}"
-                             alt="Avatar">
+    <div class="avatar">
+        <img src="{{ site.github.owner.avatar_url | default: 'https://via.placeholder.com/100' }}" alt="Avatar">
     </div>
 </section>
 <section class="portfolio">
@@ -15,7 +15,7 @@
     %}
     <article class="project">
         <header>
-            <h2><a href="">{{repo.name}}</a></h2>
+            <h2><a href="{{ repo.html_url }}">{{repo.name}}</a></h2>
             <p>{{ repo.license.name }}</p>
         </header>
         <hr>
