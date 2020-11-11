@@ -6,11 +6,36 @@
     <meta charset="utf-8">
     <base href="{{ site.url }}">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <meta name="Keywords" content="{{ site.keywords }}">
     {% seo %}
 </head>
 <body>
-<header class="header diagonal">
+<header class="header">
+    <menu>
+        <div class="icon"><img src="https://via.placeholder.com/30" alt="Nom et prénom en initiale"></div>
+        <nav>
+            <a href="#">☰</a>
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>
+        </nav>
+    </menu>
     <h1>{{ site.title }}</h1>
-    <button><a href="{{site.github.html_url}}">Github</a></button>
+    <section class="profil">
+        <article class="desc" hidden><p>Bercé par le monde de l'IT, depuis l'âge de 9 ans admiratif du monde de
+            l'informatique, j'ai
+            appris en grande partie le fonctionnement et ça compréhension (rien n'est acquis dans ce monde). Et à
+            trouver
+            depuis une voie en autodidacte de développeur Full stack dans le web avec des technologies comme PHP, MYSQL,
+            HTML, CSS, JS.
+            Mais d'autre ne sont pas exclue de mes bagages (C#, JAVA).</p></article>
+        <div class="avatar">
+            <img src="{{ site.github.owner.avatar_url | default: 'https://via.placeholder.com/100' }}" alt="Avatar">
+        </div>
+    </section>
+    <!--<button><a href="{{site.github.html_url}}">Github</a></button>-->
+    <div class="diagonal"></div>
 </header>
+
 <main>

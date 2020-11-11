@@ -16,10 +16,11 @@ html, body {
 }
 
 body {
-  background: linear-gradient(0deg, rgba(120, 120 ,120, 0.6), rgba(120, 120 ,120, 0.2)), url("../imgs/background_fond.png");
-
+  background: linear-gradient(0deg, rgba(120, 120, 120, 0.6), rgba(120, 120, 120, 0.2)), url("../imgs/background_fond.png");
   font-family: $bodyFont;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 h1 {
@@ -45,68 +46,56 @@ button {
 }
 
 .diagonal {
-  transform: skewY($degHeaderN);
-}
-
-.header {
-  transform-origin: 0 100%;
-
-  h1, button {
-    transform: skewY($degHeaderP);
-  }
-}
-
-.header, .footer {
-  height: 7rem;
-}
-
-.header {
   width: 100%;
-  position: fixed;
+  flex-basis: 2rem;
+  background-color: $colorBleu;
+  transform: skewY($degHeaderN);
+  transform-origin: 100% 0;
+}
+
+.header {
+  flex-basis: 15rem;
+  width: 100%;
   background-color: $colorBleu;
 
-  h1 {
-    padding-top: 1rem;
-    padding-left: 2rem;
-    color: white;
-    position: absolute;
+  menu {
+    height: 3rem;
+    margin: 0 1rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+
+    nav {
+      a {
+        color: white;
+      }
+    }
   }
 
-  button {
-    float: right;
-    margin-top: 6.5rem;
-    margin-right: 3.2rem;
+  ul {
+    display: none;
+  }
+
+  h1 {
+    width: 70%;
+    color: white;
+  }
+
+  .avatar {
+    width: 20%;
+
+    img {
+      width: 60px;
+      border-radius: 0.3rem;
+    }
   }
 }
 
 main {
-  padding: 8rem 0.5rem;
-
-  .profil {
-    background-color: white;
-    border-radius: 0.3rem;
-    border: 1px solid $colorBleu;
-
-    display: flex;
-    flex-direction: row;
-    padding: 10px;
-
-    .desc {
-      width: 100%;
-      padding-right: 3px;
-      align-self: start;
-    }
-
-    .avatar {
-      padding-left: 3px;
-      align-self: end;
-
-      img {
-        width: 100px;
-        border-radius: 0.3rem;
-      }
-    }
-  }
+  padding: 0 0.5rem;
 
   .portfolio {
     margin-top: 1rem;
@@ -136,6 +125,10 @@ main {
     }
   }
 
+}
+
+.footer {
+  height: 7rem;
 }
 
 .footer {
@@ -173,10 +166,10 @@ main {
 
   }
 
-  .profil{
+  .profil {
     .avatar {
       img {
-        width: 150px!important;
+        width: 150px !important;
       }
     }
   }

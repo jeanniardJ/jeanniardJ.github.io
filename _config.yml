@@ -1,12 +1,12 @@
 lang: fr_FR
 url: "https://jonathan-jeanniard.fr" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "Portfolio Jjeanniard" # the name of your site, e.g. ACME Corp.
+title: "Développeur d'application" # the name of your site, e.g. ACME Corp.
 tagline: "Représentation des projets réalisé ou participe" #bref desc
 description: "Ceci est mon portfolio qui représente une liste des projets, auquel j'ai participé ou réalisé dans tout type de langages." #desc
+keywords: "Développeur, Développeur d'application, Développeur web, Web mobile, PHP, , Html, CSS, JS, Javascript, Portfolio, Jonathan Jeanniard, Jonathan, Jeanniard"
 
-
-google_analytics: "UA-8529534-11"
+#google_analytics: "UA-8529534-11"
 
 author: "Jonthan Jeanniard"
 
