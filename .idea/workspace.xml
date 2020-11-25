@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d8aa118f-e7d9-45d4-83b5-7959977f12b9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CNAME" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/main.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/imgs/background_fond.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.md" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1j6JacN6HtNyubyPYHV6tiUDu9Q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../CRM/CDA_2005/FOAD/Php/php_objet_exos" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\jonat\Documents\GitHub\Perso\JJeanniard.github.io" />
+      <recent name="D:\jonat\Documents\GitHub\Perso\JJeanniard.github.io\_includes" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d8aa118f-e7d9-45d4-83b5-7959977f12b9" name="Default Changelist" comment="" />
+      <created>1603118674348</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603118674348</updated>
+      <workItem from="1603118675485" duration="1259000" />
+      <workItem from="1603167756047" duration="605000" />
+      <workItem from="1603168492858" duration="17041000" />
+      <workItem from="1603260453078" duration="134000" />
+      <workItem from="1603261495565" duration="76000" />
+      <workItem from="1603428758019" duration="1053000" />
+      <workItem from="1603429946010" duration="3278000" />
+      <workItem from="1603690917275" duration="4916000" />
+      <workItem from="1604039292815" duration="583000" />
+      <workItem from="1604045719086" duration="94000" />
+      <workItem from="1604215626993" duration="7540000" />
+      <workItem from="1604224055190" duration="7823000" />
+      <workItem from="1604294723215" duration="864000" />
+      <workItem from="1604299078624" duration="2872000" />
+      <workItem from="1604302064291" duration="34000" />
+      <workItem from="1604382523106" duration="4009000" />
+      <workItem from="1604468491143" duration="3948000" />
+      <workItem from="1604905527149" duration="208000" />
+      <workItem from="1605087187946" duration="8776000" />
+      <workItem from="1605204788053" duration="456000" />
+      <workItem from="1605505780741" duration="2908000" />
+      <workItem from="1605592857126" duration="604000" />
+      <workItem from="1605678556858" duration="8000" />
+      <workItem from="1605681918626" duration="626000" />
+      <workItem from="1605855293602" duration="1216000" />
+      <workItem from="1605858014645" duration="10191000" />
+      <workItem from="1606056310188" duration="385000" />
+      <workItem from="1606056712311" duration="352000" />
+      <workItem from="1606114840557" duration="352000" />
+      <workItem from="1606122789289" duration="83000" />
+      <workItem from="1606289466705" duration="6136000" />
+      <workItem from="1606297935731" duration="1097000" />
+    </task>
+    <task id="LOCAL-00001" summary="idea">
+      <created>1604221820342</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604221820342</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="idea" />
+    <option name="LAST_COMMIT_MESSAGE" value="idea" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="512" y="236" key="#Notifications" timestamp="1603690965207">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="512" y="236" key="#Notifications/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1603690965207" />
+    <state x="-1697" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603118714361">
+      <screen x="-1920" y="0" width="1536" height="824" />
+    </state>
+    <state x="-1697" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1603118714361" />
+    <state x="544" y="262" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1606298310309">
+      <screen x="0" y="0" width="1536" height="920" />
+    </state>
+    <state x="544" y="262" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.920/-1920.122.1536.824/1920.-386.960.1496@0.0.1536.920" timestamp="1606298310309" />
+    <state x="549" y="186" key="FileChooserDialogImpl" timestamp="1606122870036">
+      <screen x="0" y="0" width="1536" height="920" />
+    </state>
+    <state x="549" y="167" key="FileChooserDialogImpl/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1605508670611" />
+    <state x="549" y="186" key="FileChooserDialogImpl/0.0.1536.920/-1920.122.1536.824/1920.-386.960.1496@0.0.1536.920" timestamp="1606122870036" />
+    <state x="549" y="186" key="FileChooserDialogImpl/0.0.1536.920/-1920.123.1536.824/1920.-692.960.1496@0.0.1536.920" timestamp="1605678560768" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1603211030106">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="277" y="57" key="SettingsEditor/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1603211030106" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1604226780545">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/-1920.0.1536.824/0.0.1536.824@0.0.1536.824" timestamp="1604226780545" />
+    <state x="-1489" y="145" key="search.everywhere.popup" timestamp="1603118724718">
+      <screen x="-1920" y="0" width="1536" height="824" />
+    </state>
+    <state x="-1489" y="145" key="search.everywhere.popup/-1920.0.1536.824/0.0.1536.824@-1920.0.1536.824" timestamp="1603118724718" />
+  </component>
+</project>
