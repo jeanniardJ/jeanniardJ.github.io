@@ -1,35 +1,14 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
 lang: fr_FR
-title: Développeur d'application
-email: jjeanniard@jonathan-jeanniard.fr
-
-description: "Ceci est mon portfolio qui représente une liste des projets, auquel j'ai participé ou réalisé dans tout type de langages." #desc
-keywords: "Développeur, Développeur d'application, Développeur web, Web mobile, PHP, , Html, CSS, JS, Javascript, Portfolio, Jonathan Jeanniard, Jonathan, Jeanniard"
-
-baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jonathan-jeanniard.fr" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+title: "Portfolio Jjeanniard" # the name of your site, e.g. ACME Corp.
+tagline: "Représentation des projets réalisé ou participe" #bref desc
+description: "Ceci est mon portfolio qui représente une liste des projets, auquel j'ai participé ou réalisé dans tout type de langages." #desc
 
-#google_analytics: "UA-8529534-11"
 
-author: "Jonathan Jeanniard"
+google_analytics: "UA-8529534-11"
+
+author: "Jonthan Jeanniard"
 
 twitter:
   title: My Twitter
@@ -44,54 +23,10 @@ social:
 
 google_site_verification: "Jd08E8WmQQi6yDdLtNLZOnP2Gm3b0Yij1fpLNTLokJ8"
 
-# Build settings
-theme: jekyll-theme-experiment
+sass:
+  sass_dir: _sass
+  style: compressed
 
 plugins:
-  - jekyll-feed
-  - jekyll-github-metadata
   - jekyll-seo-tag
-
-twitter_username: jjeanniard
-github_username: jjeanniard
-
-jekyll-theme-experiment:
-  about: # optional
-    avatar: https://robohash.org/experiment-avatar.png?size=300x300
-
-  portfolio: # optional
-    title: Portfolio
-    # Depending of the number of projects, you will need to update $projects
-    # variable in a sass file. e.g.
-    # _sass/main.scss
-    #
-    projects:
-      - name: Jekyll Theme experiment
-        link: http://example.com
-        github: https://github.com/anxhe/jekyll-theme-experiment
-        img_relative_url: /assets/example.png
-
-  tools: # optional
-    title: Tools and Experience
-    icons:
-      - relative_url: /assets/icons/bitbucket/bitbucket-original.svg
-
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+  - jekyll-github-metadata
