@@ -28,12 +28,8 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    autoprefixer-rails (10.0.3.0)
+    autoprefixer-rails (9.8.6.5)
       execjs
-    bootstrap (4.0.0)
-      autoprefixer-rails (>= 6.0.3)
-      popper_js (>= 1.12.9, < 2)
-      sass (>= 3.5.2)
     builder (3.2.4)
     colorator (1.1.0)
     concurrent-ruby (1.1.7)
@@ -67,6 +63,8 @@ GEM
       rouge (~> 3.0)
       safe_yaml (~> 1.0)
       terminal-table (~> 1.8)
+    jekyll-autoprefixer (1.0.2)
+      autoprefixer-rails (~> 9.3)
     jekyll-feed (0.15.1)
       jekyll (>= 3.7, < 5.0)
     jekyll-github-metadata (2.13.0)
@@ -105,7 +103,6 @@ GEM
       sawyer (~> 0.8.0, >= 0.5.3)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    popper_js (1.16.0)
     public_suffix (4.0.6)
     rack (2.2.3)
     rack-test (1.1.0)
@@ -129,11 +126,6 @@ GEM
     rouge (3.25.0)
     ruby2_keywords (0.0.2)
     safe_yaml (1.0.5)
-    sass (3.7.4)
-      sass-listen (~> 4.0.0)
-    sass-listen (4.0.0)
-      rb-fsevent (~> 0.9, >= 0.9.4)
-      rb-inotify (~> 0.9, >= 0.9.7)
     sassc (2.4.0-x64-mingw32)
       ffi (~> 1.9)
     sawyer (0.8.2)
@@ -146,19 +138,21 @@ GEM
     tzinfo (1.2.8)
       thread_safe (~> 0.1)
     unicode-display_width (1.7.0)
+    wdm (0.1.1)
     zeitwerk (2.4.1)
 
 PLATFORMS
   x64-mingw32
 
 DEPENDENCIES
-  bootstrap (~> 4.0.0)
+  jekyll-autoprefixer
   jekyll-feed (~> 0.12)
   jekyll-github-metadata
   jekyll-sass-converter
   jekyll-seo-tag (~> 2.6)
   jjeanniard-bootstrap!
   jquery-rails
+  wdm (>= 0.1.0)
 
 BUNDLED WITH
    2.1.4

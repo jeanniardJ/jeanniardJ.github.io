@@ -3,8 +3,7 @@
 source "https://rubygems.org"
 gemspec
 
-
-gem "bootstrap", "~> 4.0.0"
+gem "wdm", ">= 0.1.0"
 gem "jquery-rails"
 gem "jekyll-github-metadata"
 gem "jekyll-sass-converter"
@@ -12,4 +11,5 @@ gem "jekyll-sass-converter"
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
   gem "jekyll-seo-tag", "~> 2.6"
+  gem 'jekyll-autoprefixer'
 end
