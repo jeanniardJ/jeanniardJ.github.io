@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d8aa118f-e7d9-45d4-83b5-7959977f12b9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/_sass/_accordion.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_alert.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_badge.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_breadcrumb.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_button-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_buttons.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_card.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_carousel.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_close.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_containers.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_dropdown.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_forms.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_functions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_helpers.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_images.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_list-group.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_mixins.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_modal.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_nav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_navbar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_pagination.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_popover.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_progress.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_root.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_spinners.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_tables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_toasts.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_tooltip.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_transitions.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_type.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_utilities.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/_variables.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/bootstrap-grid.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/bootstrap-reboot.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/bootstrap-utilities.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/_sass/bootstrap.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/main.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1j6JacN6HtNyubyPYHV6tiUDu9Q" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\jonat\Documents\GitHub\Perso\JJeanniard.github.io\_sass" />
+      <recent name="D:\jonat\Documents\GitHub\Perso\JJeanniard.github.io" />
+      <recent name="D:\jonat\Documents\GitHub\Perso\JJeanniard.github.io\_includes" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d8aa118f-e7d9-45d4-83b5-7959977f12b9" name="Default Changelist" comment="" />
+      <created>1603118674348</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1603118674348</updated>
+      <workItem from="1603118675485" duration="1259000" />
+      <workItem from="1603167756047" duration="605000" />
+      <workItem from="1603168492858" duration="17041000" />
+      <workItem from="1603260453078" duration="134000" />
+      <workItem from="1603261495565" duration="76000" />
+      <workItem from="1603428758019" duration="1053000" />
+      <workItem from="1603429946010" duration="3278000" />
+      <workItem from="1603690917275" duration="4916000" />
+      <workItem from="1604039292815" duration="583000" />
+      <workItem from="1604045719086" duration="94000" />
+      <workItem from="1604215626993" duration="7540000" />
+      <workItem from="1604224055190" duration="7823000" />
+      <workItem from="1604294723215" duration="864000" />
+      <workItem from="1604299078624" duration="2872000" />
+      <workItem from="1604302064291" duration="34000" />
+      <workItem from="1604382523106" duration="4009000" />
+      <workItem from="1604468491143" duration="3948000" />
+      <workItem from="1604905527149" duration="208000" />
+      <workItem from="1605087187946" duration="8776000" />
+      <workItem from="1605204788053" duration="456000" />
+      <workItem from="1605505780741" duration="2908000" />
+      <workItem from="1605592857126" duration="604000" />
+      <workItem from="1605678556858" duration="8000" />
+      <workItem from="1605681918626" duration="626000" />
+      <workItem from="1605855293602" duration="1216000" />
+      <workItem from="1605858014645" duration="10191000" />
+      <workItem from="1606056310188" duration="385000" />
+      <workItem from="1606056712311" duration="352000" />
+      <workItem from="1606114840557" duration="352000" />
+      <workItem from="1606122789289" duration="83000" />
+      <workItem from="1606289466705" duration="6136000" />
+      <workItem from="1606297935731" duration="1937000" />
+      <workItem from="1606411008651" duration="7320000" />
+      <workItem from="1606460256663" duration="635000" />
+      <workItem from="1606481699812" duration="106000" />
+      <workItem from="1607926243944" duration="3361000" />
+      <workItem from="1607933004160" duration="40000" />
+      <workItem from="1608224125550" duration="1747000" />
+    </task>
+    <task id="LOCAL-00001" summary="idea">
+      <created>1604221820342</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604221820342</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/jekyll-theme-experiment" />
+      <path value="$PROJECT_DIR$/jjeanniard-bootstrap" />
+    </ignored-roots>
+    <MESSAGE value="idea" />
+    <option name="LAST_COMMIT_MESSAGE" value="idea" />
+  </component>
+</project>
