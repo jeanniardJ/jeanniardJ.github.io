@@ -20,53 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8aa118f-e7d9-45d4-83b5-7959977f12b9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/_sass/_accordion.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_alert.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_badge.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_breadcrumb.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_button-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_buttons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_card.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_carousel.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_close.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_containers.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_dropdown.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_forms.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_functions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_helpers.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_images.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_list-group.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_modal.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_nav.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_navbar.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_pagination.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_popover.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_progress.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_reboot.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_root.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_spinners.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_tables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_toasts.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_tooltip.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_transitions.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_type.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_utilities.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/bootstrap-grid.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/bootstrap-reboot.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/bootstrap-utilities.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/_sass/bootstrap.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/styles.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_layouts/default.html" beforeDir="false" afterPath="$PROJECT_DIR$/_layouts/default.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_sass/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/_sass/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.md" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +57,11 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\jonat\Documents\GitHub\Perso\JJeanniard.github.io\assets\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\jonat\Documents\GitHub\Perso\JJeanniard.github.io\_layouts" />
       <recent name="D:\jonat\Documents\GitHub\Perso\JJeanniard.github.io\_sass" />
       <recent name="D:\jonat\Documents\GitHub\Perso\JJeanniard.github.io" />
       <recent name="D:\jonat\Documents\GitHub\Perso\JJeanniard.github.io\_includes" />
@@ -154,6 +113,9 @@
       <workItem from="1607926243944" duration="3361000" />
       <workItem from="1607933004160" duration="40000" />
       <workItem from="1608224125550" duration="1747000" />
+      <workItem from="1608537454630" duration="544000" />
+      <workItem from="1609156350651" duration="8070000" />
+      <workItem from="1609247895403" duration="376000" />
     </task>
     <task id="LOCAL-00001" summary="idea">
       <created>1604221820342</created>
