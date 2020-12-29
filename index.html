@@ -1,5 +1,39 @@
 ---
 layout: default
 ---
-
-{{ site }}
+<!-- la classe .g-* pour les gouttières horizontale  -->
+<main>
+    <section id="compt" class="container">
+        <h2 class="text-center">Compétence</h2>
+    </section>
+    <section id="exp" class="container">
+        <h2 class="text-center">Expérience</h2>
+    </section>
+    <section id="form" hidden>
+        <h2 class="text-center">Formation</h2>
+    </section>
+    <section id="portfolio" class="">
+        <h2 class="text-center">Portfolio - Réalisation</h2>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2">
+                {% for github in site.github.public_repositories %}
+                {% if github.archived == false and github.has_pages == true %}
+                <div class="col">
+                    <div class="card shadow-sm p-2">
+                        <img class="img-thumbnail" src="http://via.placeholder.com/150" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ github.name }}</h5>
+                            <p class="card-text">{{ github.description}}</p>
+                            <a href="" class="btn btn-primary">Lien</a>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <section id="contact" hidden>
+        <h2 class="text-center">Contact</h2>
+    </section>
+</main>
