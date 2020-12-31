@@ -3,6 +3,39 @@
 /**
  * Created by jjeanniard 2021
  */
+:root {
+--hex-width: 100px;
+--hex-between: 10px;
+
+/* Other hexagon dimentions */
+--hex-height: calc(var(--hex-width) / 1.73 /* sqrt(3) */);
+--hex-margin: calc(var(--hex-width) / 2);
+--hex-border: calc(var(--hex-margin) / 1.73 /* sqrt(3) */);
+--hex-transition: all .2s ease;
+
+/* Colors */
+--color-hex-default: #000000;
+--color-hex-hover:   #FFFFFF;
+--color-angular:     #DD0031;
+--color-atom:        #66595C;
+--color-bootstrap:   #563D7C;
+--color-circleci:    #343434;
+--color-css:         #1572B6;
+--color-git:         #F14E32;
+--color-gulp:        #DA4648;
+--color-haskell:     #5D4F85;
+--color-html:        #E34F26;
+--color-javascript:  #F7DF1E;
+--color-meteor:      #DE4F4F;
+--color-python:      #3776AB;
+--color-rails:       #CC0000;
+--color-sass:        #CC6699;
+--color-vuejs:       #4FC08D;
+--color-webpack:     #8DD6F9;
+--color-composer:    #885630;
+--color-php:         #777BB4;
+
+}
 
 *{
   box-sizing: border-box;
@@ -10,4 +43,179 @@
 
 main{
   padding-top: 60px;
+}
+
+/* Hexagons */
+.hexagon-container {
+  display: grid;
+  grid-template-columns: var(--hex-width) var(--hex-width) var(--hex-width) var(--hex-width);
+  grid-auto-rows: calc(var(--hex-width) - 28.87px/2);
+  grid-gap: var(--hex-between) var(--hex-between);
+  padding-bottom: var(--hex-border);
+}
+.hexagon {
+  align-items: center;
+  background-color: var(--color-hex-default);
+  cursor: pointer;
+  display: flex;
+  fill: white;
+  height: var(--hex-height);
+  justify-content: center;
+  margin: var(--hex-border) 0;
+  position: relative;
+  transition: var(--hex-transition);
+  width: var(--hex-width);
+}
+
+.hexagon::after,
+.hexagon::before {
+  border-left: var(--hex-margin) solid transparent;
+  border-right: var(--hex-margin) solid transparent;
+  content: "";
+  left: 0;
+  position: absolute;
+  transition: var(--hex-transition);
+  width: 0;
+}
+.hexagon::after {
+  border-top: var(--hex-border) solid var(--color-hex-default);
+  top: 100%;
+  width: 0;
+}
+.hexagon::before {
+  border-bottom: var(--hex-border) solid var(--color-hex-default);
+  bottom: 100%;
+}
+
+.hexagon:hover {
+  background-color: var(--color-hex-hover);
+}
+.hexagon:hover::after,
+.hexagon:hover::before {
+  border-top-color: var(--color-hex-hover);
+  border-bottom-color: var(--color-hex-hover);
+}
+
+.hexagon:nth-child(8n + 5),
+.hexagon:nth-child(8n + 6),
+.hexagon:nth-child(8n + 7),
+.hexagon:nth-child(8n + 8) {
+  margin-left: calc(var(--hex-width) / 2 + var(--hex-between) / 2);
+}
+
+.hexagon > svg {
+  height: 75%;
+  transition: var(--hex-transition);
+}
+
+.color-sass {
+  background-color: var(--color-sass);
+}
+.color-sass::after,
+.color-sass::before {
+  border-top-color: var(--color-sass);
+  border-bottom-color: var(--color-sass);
+}
+.color-sass:hover {
+  fill: var(--color-sass);
+}
+
+.color-html {
+  background-color: var(--color-html);
+}
+.color-html::after,
+.color-html::before {
+  border-top-color: var(--color-html);
+  border-bottom-color: var(--color-html);
+}
+.color-html:hover {
+  fill: var(--color-html);
+}
+
+.color-javascript {
+  background-color: var(--color-javascript);
+}
+.color-javascript::after,
+.color-javascript::before {
+  border-top-color: var(--color-javascript);
+  border-bottom-color: var(--color-javascript);
+}
+.color-javascript:hover {
+  fill: var(--color-javascript);
+}
+
+.color-css {
+  background-color: var(--color-css);
+}
+.color-css::after,
+.color-css::before {
+  border-top-color: var(--color-css);
+  border-bottom-color: var(--color-css);
+}
+.color-css:hover {
+  fill: var(--color-css);
+}
+
+.color-bootstrap {
+  background-color: var(--color-bootstrap);
+}
+.color-bootstrap::after,
+.color-bootstrap::before {
+  border-top-color: var(--color-bootstrap);
+  border-bottom-color: var(--color-bootstrap);
+}
+.color-bootstrap:hover {
+  fill: var(--color-bootstrap);
+}
+
+.color-git {
+  background-color: var(--color-git);
+}
+.color-git::after,
+.color-git::before {
+  border-top-color: var(--color-git);
+  border-bottom-color: var(--color-git);
+}
+.color-git:hover {
+  fill: var(--color-git);
+}
+
+.color-vuejs {
+  background-color: var(--color-vuejs);
+}
+.color-vuejs::after,
+.color-vuejs::before {
+  border-top-color: var(--color-vuejs);
+  border-bottom-color: var(--color-vuejs);
+}
+.color-vuejs:hover {
+  fill: var(--color-vuejs);
+}
+
+.color-composer {
+  background-color: var(--color-composer);
+}
+
+.color-composer::after,
+.color-composer::before {
+  border-top-color: var(--color-composer);
+  border-bottom-color: var(--color-composer);
+}
+
+.color-composer:hover {
+  fill: var(--color-composer);
+}
+
+.color-php {
+  background-color: var(--color-php);
+}
+
+.color-php::after,
+.color-php::before {
+  border-top-color: var(--color-php);
+  border-bottom-color: var(--color-php);
+}
+
+.color-php:hover {
+  fill: var(--color-php);
 }
