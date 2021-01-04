@@ -21,8 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d8aa118f-e7d9-45d4-83b5-7959977f12b9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/_config.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
@@ -53,6 +52,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -118,7 +118,10 @@
       <workItem from="1608224125550" duration="1747000" />
       <workItem from="1608537454630" duration="544000" />
       <workItem from="1609156350651" duration="8070000" />
-      <workItem from="1609247895403" duration="15789000" />
+      <workItem from="1609247895403" duration="17052000" />
+      <workItem from="1609520575864" duration="25000" />
+      <workItem from="1609520649684" duration="36000" />
+      <workItem from="1609743506278" duration="467000" />
     </task>
     <task id="LOCAL-00001" summary="idea">
       <created>1604221820342</created>
