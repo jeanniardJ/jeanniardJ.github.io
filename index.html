@@ -1,22 +1,56 @@
 ---
 layout: default
 ---
-<!-- la classe .g-* pour les gouttières horizontale  -->
 <main>
-    <section id="compt" class="bg-light">
-        <h2 class="text-center fw-bold">Compétence</h2>
+    <section id="competences" class="bg-light">
         <div class="container">
             <div class="row justify-content-center p-4">
-                 {% include skill.html %}
+                {% include skill.html %}
             </div>
         </div>
     </section>
-    <section id="exp" class="container">
-        <h2 class="text-center fw-bold">Expérience</h2>
-
+    <section id="experiences" class="container">
+        <div class="container">
+            <div class="row justify-content-center p-4">
+                <div class="col-md-12">
+                    <div class="main-timeline">
+                        <div class="timeline">
+                            <div class="timeline-content">
+                                <div class="timeline-year">2019</div>
+                                <div class="timeline-icon"><i class="fa fa-building"></i></div>
+                                <div class="inner-content">Réalisation des passages de câble (acheminement, gaines,
+                                    chemin de câble…), avec tirage de câble et raccordement de l'appareillage finaux
+                                    (prise, luminaire, radar …).
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-content">
+                                <div class="timeline-year"></div>
+                                <div class="timeline-icon"></div>
+                                <div class="inner-content"></div>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-content">
+                                <div class="timeline-year"></div>
+                                <div class="timeline-icon"></div>
+                                <div class="inner-content"></div>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-content">
+                                <div class="timeline-year"></div>
+                                <div class="timeline-icon"></div>
+                                <div class="inner-content"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="portfolio" class="bg-light p-3">
-        <h2 class="text-center fw-bold m-2">Portfolio - Réalisation</h2>
+    <section id="realisation" class="bg-light p-3">
         <div class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2">
                 {% for github in site.github.public_repositories %}
@@ -38,7 +72,7 @@ layout: default
             </div>
         </div>
     </section>
-    <section id="form">
+    <section id="formation">
         <h2 class="text-center fw-bold">Formation</h2>
     </section>
 </main>
