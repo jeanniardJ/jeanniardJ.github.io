@@ -1,28 +1,11 @@
+{% include head.html %}
+<body>
 {% include header.html %}
-
-<section class="profil">
-    <div class="desc"><p>Bercé par le monde de l'IT, depuis l'âge de 9 ans admiratif du monde de l'informatique, j'ai
-        appris en grande partie le fonctionnement et ça compréhension (rien n'est acquis dans ce monde). Et à trouver
-        depuis une voie en autodidacte de développeur Full stack dans le web avec des technologies comme HTML, CSS, JS,
-        MYSQL. Mais d'autre ne sont pas exclue de mes bagages (C#, JAVA).</p></div>
-    <div class="avatar">
-        <img src="{{ site.github.owner.avatar_url | default: 'https://via.placeholder.com/100' }}" alt="Avatar">
-    </div>
-</section>
-<section class="portfolio">
-    {% for repo in site.github.public_repositories %}
-    {% if repo.fork != true and repo.archived != true and repo.name != "JJeanniard.github.io" and repo.has_pages == true
-    %}
-    <article class="project">
-        <header>
-            <h2><a href="{{ repo.html_url }}">{{repo.name}}</a></h2>
-            <p>{{ repo.license.name }}</p>
-        </header>
-        <hr>
-        <p class="desc">{{ repo.description}}</p>
-    </article>
-    {% endif %}
-    {% endfor %}
-</section>
-
+{{ content }}
 {% include footer.html %}
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+</html>
+

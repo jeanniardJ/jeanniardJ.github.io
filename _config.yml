@@ -4,11 +4,11 @@ baseurl: "" # the subpath of your site, e.g. /blog
 title: "Portfolio Jjeanniard" # the name of your site, e.g. ACME Corp.
 tagline: "Représentation des projets réalisé ou participe" #bref desc
 description: "Ceci est mon portfolio qui représente une liste des projets, auquel j'ai participé ou réalisé dans tout type de langages." #desc
-
+initiale: "Jjeanniard"
 
 google_analytics: "UA-8529534-11"
 
-author: "Jonthan Jeanniard"
+author: "Jonathan Jeanniard"
 
 twitter:
   title: My Twitter
@@ -30,3 +30,4 @@ sass:
 plugins:
   - jekyll-seo-tag
   - jekyll-github-metadata
+  - jekyll-autoprefixer
