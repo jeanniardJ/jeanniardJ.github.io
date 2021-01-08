@@ -2,51 +2,64 @@
 layout: default
 ---
 <main>
-    <section id="presentation" class="py-5 text-center text-white">
+    <section id="presentation" role="présentation" class="py-5 text-center text-white">
         <div class="container">
             <div class="row py-lg-5">
                 <div class="col-lg-6 col-md-8 mx-auto">
-                    <h1 class="fw-light">Jonathan Jeanniard</h1>
-                    <p class="lead fw-bold">Tombé dans la marmite du monde de l'informatique, je suis développeur web
-                        /
-                        web mobile, et spécialement dans le back-end.</p>
+                    <div class="p-5 bg-grey bg-gradient rounded-3 shadow-sm">
+                        <h1 class="fw-light">Jonathan Jeanniard</h1>
+                        <p class="lead fw-bold">Tombé dans la marmite du monde de l'informatique, je suis développeur
+                            web
+                            /
+                            web mobile, et spécialement dans le back-end.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="experiences" class="bg-light">
+    <section id="experiences" role="expérience" class="bg-light">
         <div class="container p-3">
-            <h1 class="text-center text-uppercase fw-bold">Experiences</h1>
-            <div class="row justify-content-center p-4">
-                {% include experience.html %}
+            <div class="shadow-sm border border-2 m-3 rounded-3">
+                <h1 class="text-orange text-center text-uppercase fw-bold mt-3">Expériences</h1>
+                <hr class="bg-orange">
+                <div class="row justify-content-center p-4">
+                    {% include experience.html %}
+                </div>
             </div>
         </div>
     </section>
-    <section id="skills">
+    <section id="skills" class="bg-orange">
         <div class="container p-3">
-            <h1 class="text-center text-uppercase fw-bold">Compétences</h1>
-            <div class="row justify-content-center p-4">
-                {% include skill.html %}
+            <div class="shadow-sm m-3 rounded-3">
+                <h1 class="text-center text-uppercase text-white fw-bold mt-3">Compétences</h1>
+                <hr>
+                <div class="row justify-content-center p-4">
+                    {% include skill.html %}
+                </div>
             </div>
         </div>
     </section>
     <section id="realisation" class="bg-light">
         <div class="container p-3">
-            <h1 class="text-center text-uppercase fw-bold">Mes projets</h1>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2">
-                {% for github in site.github.public_repositories %}
-                {% if github.archived == false and github.has_pages == true and github.name != "JJeanniard.github.io" %}
-                <div class="col">
-                    <div class="card shadow-sm h-100">
-                        <div class="card-body">
-                            <h2 class="card-title">{{ github.name }}</h2>
-                            <p class="card-text">{{ github.description}}</p>
-                            <a href="{{ github.html_url }}" class="btn btn-primary">Lien</a>
+            <div class="shadow-sm border border-2 m-3 rounded-3">
+                <h1 class="text-center text-uppercase text-orange fw-bold mt-3">Mes projets</h1>
+                <hr class="bg-orange">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2 p-3">
+                    {% for github in site.github.public_repositories %}
+                    {% if github.archived == false and github.has_pages == true and github.name !=
+                    "JJeanniard.github.io" %}
+                    <div class="col">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body">
+                                <h2 class="card-title">{{ github.name }}</h2>
+                                <p class="card-text">{{ github.description}}</p>
+                                <a href="{{ github.html_url }}" class="btn btn-orange">Lien</a>
+                            </div>
                         </div>
                     </div>
+                    {% endif %}
+                    {% endfor %}
                 </div>
-                {% endif %}
-                {% endfor %}
             </div>
         </div>
     </section>

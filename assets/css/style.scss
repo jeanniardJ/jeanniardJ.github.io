@@ -40,6 +40,8 @@
   --color-cisco: #1BA0D7;
 
   --color-office: #D83B01;
+
+  --color-orange: #FA9C28;
 }
 
 * {
@@ -50,21 +52,48 @@ main {
   padding-top: 59px;
 }
 
-#presentation{
+#presentation {
   background-image: url("../images/bg.jpg");
   background-repeat: no-repeat;
   background-position: right;
   background-size: cover;
 }
 
+.text-orange {
+  color: var(--color-orange);
+}
+
+.bg-orange {
+  background-color: var(--color-orange);
+}
+
+.bg-grey {
+  background-color: #80808066;
+}
+
+.btn-orange {
+  color: var(--color-hex-hover);
+  background-color: var(--color-orange);
+  border-color: var(--color-orange);
+}
+
+hr {
+  height: 3px !important;
+  background-color: var(--color-hex-hover);
+}
+
 /* Hexagons */
 .hexagon-container {
   display: grid;
-  grid-template-columns: var(--hex-width) var(--hex-width) var(--hex-width) var(--hex-width) var(--hex-width);
   grid-auto-rows: calc(var(--hex-width) - 28.87px / 2);
   grid-gap: var(--hex-between) var(--hex-between);
   padding-bottom: var(--hex-border);
 }
+
+.hexagon-container {
+  grid-template-columns: var(--hex-width) var(--hex-width) var(--hex-width) var(--hex-width) var(--hex-width);
+}
+
 
 .hexagon {
   align-items: center;
@@ -112,12 +141,42 @@ main {
   border-bottom-color: var(--color-hex-hover);
 }
 
-.hexagon:nth-child(10n + 6),
-.hexagon:nth-child(10n + 7),
-.hexagon:nth-child(10n + 8),
-.hexagon:nth-child(10n + 9),
-.hexagon:nth-child(10n + 10) {
-  margin-left: calc(var(--hex-width) / 2 + var(--hex-between) / 2);
+@media (min-width: 992px) {
+
+  .hexagon:nth-child(10n + 6),
+  .hexagon:nth-child(10n + 7),
+  .hexagon:nth-child(10n + 8),
+  .hexagon:nth-child(10n + 9),
+  .hexagon:nth-child(10n + 10) {
+    margin-left: calc(var(--hex-width) / 2 + var(--hex-between) / 2);
+  }
+}
+
+@media (min-width: 768px ) and (max-width: 992px){
+  .hexagon-container {
+    grid-template-columns: var(--hex-width) var(--hex-width) var(--hex-width) var(--hex-width);
+  }
+
+  .hexagon:nth-child(8n + 5),
+  .hexagon:nth-child(8n + 6),
+  .hexagon:nth-child(8n + 7),
+  .hexagon:nth-child(8n + 8)
+  {
+    margin-left: calc(var(--hex-width) / 2 + var(--hex-between) / 2);
+  }
+}
+
+@media (max-width: 768px){
+  .hexagon-container {
+    grid-template-columns: var(--hex-width) var(--hex-width) var(--hex-width);
+  }
+
+  .hexagon:nth-child(6n + 4),
+  .hexagon:nth-child(6n + 5),
+  .hexagon:nth-child(6n + 6)
+  {
+    margin-left: calc(var(--hex-width) / 2 + var(--hex-between) / 2);
+  }
 }
 
 .hexagon > svg {
