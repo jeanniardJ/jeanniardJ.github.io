@@ -1,10 +1,11 @@
 lang: fr_FR
-url: "https://jonathan-jeanniard.fr" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://jonathanjeanniard.me" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
-title: "Portfolio Jjeanniard" # the name of your site, e.g. ACME Corp.
-tagline: "Représentation des projets réalisé ou participe" #bref desc
+title: "Jjeanniard" # the name of your site, e.g. ACME Corp.
+tagline: "Portfolio" #bref desc
 description: "Ceci est mon expérience dans le développement, qui est représenté par une liste de projet et de technologie utilisé, sur lesquels j'ai participé ou que je réalise dans tout type de langages." #desc
 initiale: "Jjeanniard"
+keywork
 
 google_analytics: "UA-8529534-11"
 
@@ -13,9 +14,14 @@ author: "Jonathan Jeanniard"
 twitter:
   title: My Twitter
   username: jjeanniard
+  card: summary
+
+linkedin:
+  title: Mon profils Linkedin
+  username: Jonathan Jeanniard;
 
 social:
-  name: Jonathan JEANNIARD
+  name: Jonathan Jeanniard
   links:
     - https://twitter.com/JJeanniard
     - https://www.linkedin.com/in/jonathan-jeanniard/
