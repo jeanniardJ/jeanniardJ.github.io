@@ -12,13 +12,13 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
-gem "jjeanniard-bootstrap"
+gem "jjeanniard-portfolio"
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: jjeanniard-bootstrap
+theme: jjeanniard-portfolio
 ```
 
 And then execute:
