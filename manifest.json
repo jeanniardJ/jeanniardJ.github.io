@@ -1,0 +1,17 @@
+{
+  "name": "Jonathan Jeanniard",
+  "lang": "fr",
+  "display": "standalone",
+  "background_color": "black",
+  "description": "Portfolio",
+  "orientation": "portrait",
+  "theme_color": "#000000",
+  "short_name": "JJ",
+  "icons": [
+    {
+      "src": "assets/images/jj_logo_blanc.png",
+      "sizes": "48x48 192x192 512x512",
+      "type": "image/png"
+    }
+  ]
+}

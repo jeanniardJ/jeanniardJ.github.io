@@ -19,11 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8aa118f-e7d9-45d4-83b5-7959977f12b9" name="Default Changelist" comment="idea">
+    <list default="true" id="d8aa118f-e7d9-45d4-83b5-7959977f12b9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/serviceWorker.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/experience.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/experience.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/_includes/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/footer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_includes/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/_includes/head.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +36,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -125,8 +125,8 @@
       <workItem from="1609743506278" duration="2105000" />
       <workItem from="1609746111641" duration="10976000" />
       <workItem from="1609776367073" duration="8739000" />
-      <workItem from="1609902172278" duration="33256000" />
-      <workItem from="1610707842881" duration="2554000" />
+      <workItem from="1609902172278" duration="33168000" />
+      <workItem from="1616143302381" duration="5835000" />
     </task>
     <task id="LOCAL-00001" summary="idea">
       <created>1604221820342</created>
