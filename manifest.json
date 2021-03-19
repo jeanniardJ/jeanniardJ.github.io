@@ -8,7 +8,7 @@
   "icons": [
     {
       "src": "assets/images/jj_logo_blanc.png",
-      "syze": "48x48"
+      "sizes": "48x48"
     }
   ]
 }
