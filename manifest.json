@@ -9,7 +9,8 @@
   "icons": [
     {
       "src": "assets/images/jj_logo_blanc.png",
-      "sizes": "48x48"
+      "sizes": "48x48 192x192 512x512",
+      "type": "image/png"
     }
   ]
 }
