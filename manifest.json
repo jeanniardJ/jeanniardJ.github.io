@@ -6,6 +6,7 @@
   "description": "Portfolio",
   "orientation": "portrait",
   "theme_color": "#ffffff",
+  "short_name": "JJ",
   "icons": [
     {
       "src": "assets/images/jj_logo_blanc.png",
