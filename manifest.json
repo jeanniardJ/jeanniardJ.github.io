@@ -5,6 +5,7 @@
   "background_color": "white",
   "description": "Portfolio",
   "orientation": "portrait",
+  "theme_color": "#ffffff",
   "icons": [
     {
       "src": "assets/images/jj_logo_blanc.png",
