@@ -1,4 +1,4 @@
-const staticCacheName = "cache-v1.0.3";
+const staticCacheName = "cache-v1";
 const assets = ['/'];
 
 self.addEventListener('install', (e) => {
@@ -7,7 +7,7 @@ self.addEventListener('install', (e) => {
             cache.addAll(assets);
         })
     )
-})
+});
 
 self.addEventListener('fetch', (e) => {
     e.respondWith(
@@ -45,13 +45,15 @@ self.addEventListener('fetch', (e) => {
     );
 });
 
-//supprimer caches
-self.addEventListener('activate', (e) => {
+// supprimer caches
+self.addEventListener("activate", (e) => {
     e.waitUntil(
         caches.keys().then((keys) => {
             return Promise.add(
-                keys.filter((key) => key == staticCacheName).map((key) => caches.delete(key))
+                keys
+                    .filter((key) => key !== staticCacheName)
+                    .map((key) => caches.delete(key))
             )
         })
-    )
+    );
 });

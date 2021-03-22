@@ -54,7 +54,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DWWM_2005" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -128,7 +128,9 @@
       <workItem from="1609902172278" duration="33256000" />
       <workItem from="1610707842881" duration="2554000" />
       <workItem from="1616153220204" duration="3748000" />
-      <workItem from="1616404936336" duration="4117000" />
+      <workItem from="1616404936336" duration="5644000" />
+      <workItem from="1616412954484" duration="62000" />
+      <workItem from="1616419158524" duration="1737000" />
     </task>
     <task id="LOCAL-00001" summary="idea">
       <created>1604221820342</created>
