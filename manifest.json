@@ -19,5 +19,11 @@
       "type": "image/png",
       "purpose": "any maskable"
     }
+  ],
+  "prefer_related_applications": true,
+  "related_applications" : [{
+    "platform": "play",
+    "id": ""
+  }
   ]
 }

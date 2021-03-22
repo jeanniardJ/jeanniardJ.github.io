@@ -22,7 +22,6 @@
     <list default="true" id="d8aa118f-e7d9-45d4-83b5-7959977f12b9" name="Default Changelist" comment="idea">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/serviceWorker.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +129,7 @@
       <workItem from="1616153220204" duration="3748000" />
       <workItem from="1616404936336" duration="5644000" />
       <workItem from="1616412954484" duration="62000" />
-      <workItem from="1616419158524" duration="1737000" />
+      <workItem from="1616419158524" duration="3557000" />
     </task>
     <task id="LOCAL-00001" summary="idea">
       <created>1604221820342</created>
