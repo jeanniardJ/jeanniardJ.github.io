@@ -9,5 +9,5 @@ self.addEventListener('install', (e)=>{
 })
 
 self.addEventListener('fetch', (e) =>{
-    console.log(e)
+    console.log(e.request)
 })
