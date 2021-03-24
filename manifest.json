@@ -1,12 +1,13 @@
 {
   "name": "Jonathan Jeanniard",
+  "short_name": "JJ",
+  "description": "Portfolio",
   "lang": "fr",
   "display": "standalone",
   "background_color": "black",
-  "description": "Portfolio",
   "orientation": "portrait-primary",
   "theme_color": "#000000",
-  "short_name": "JJ",
+  "start_url": "/index.html",
   "icons": [
     {
       "src": "assets/images/jj_logo_blanc.png",
