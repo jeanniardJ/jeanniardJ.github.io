@@ -4,14 +4,26 @@
   "display": "standalone",
   "background_color": "black",
   "description": "Portfolio",
-  "orientation": "portrait",
+  "orientation": "portrait-primary",
   "theme_color": "#000000",
   "short_name": "JJ",
   "icons": [
     {
       "src": "assets/images/jj_logo_blanc.png",
-      "sizes": "48x48 192x192 512x512",
+      "sizes": "48x48 512x512",
       "type": "image/png"
+    },
+    {
+      "src": "assets/images/jj_logo_blanc.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
+  ],
+  "prefer_related_applications": true,
+  "related_applications" : [{
+    "platform": "play",
+    "id": ""
+  }
   ]
 }
