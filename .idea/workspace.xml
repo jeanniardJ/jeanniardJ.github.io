@@ -21,7 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d8aa118f-e7d9-45d4-83b5-7959977f12b9" name="Default Changelist" comment="idea">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/serviceWorker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/serviceWorker.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/serviceWorker.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,10 +66,10 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\jonat\Documents\GitHub\Perso\JJeanniard.github.io\assets\images" />
+      <recent name="D:\jonat\Documents\GitHub\Perso\JJeanniard.github.io\assets\js" />
       <recent name="D:\jonat\Documents\GitHub\Perso\JJeanniard.github.io\_layouts" />
       <recent name="D:\jonat\Documents\GitHub\Perso\JJeanniard.github.io\_sass" />
       <recent name="D:\jonat\Documents\GitHub\Perso\JJeanniard.github.io" />
-      <recent name="D:\jonat\Documents\GitHub\Perso\JJeanniard.github.io\_includes" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -131,6 +133,8 @@
       <workItem from="1616412954484" duration="62000" />
       <workItem from="1616419158524" duration="3557000" />
       <workItem from="1616729223296" duration="938000" />
+      <workItem from="1616921167363" duration="609000" />
+      <workItem from="1617364381280" duration="536000" />
     </task>
     <task id="LOCAL-00001" summary="idea">
       <created>1604221820342</created>

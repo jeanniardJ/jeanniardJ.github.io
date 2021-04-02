@@ -1,10 +1,10 @@
 const staticCacheName = "cache-v1";
-const assets = ['/', '/index.html'];
+const assets = ['index.html', 'assets/css/style.css', 'assets/images/bg.jpg'];
 
 self.addEventListener('install', (e) => {
     e.waitUntil(
         caches.open(staticCacheName).then((cache) => {
-            cache.addAll(assets);
+            return cache.addAll(assets);
         })
     )
 });
