@@ -9,16 +9,15 @@ self.addEventListener('install', (e) => {
     );
 });
 
-self.addEventListener('fetch', (e) => {
-    e.respondWith(
-        caches.match(e.request)
-            .then(function (response) {
+self.addEventListener('fetch', evt => {
+    evt.respondWith(
+        caches.match(evt.request).then(response => {
                 // Cache hit - return response
                 if (response) {
                     return response;
                 }
 
-                return fetch(e.request).then(nResponse => {
+                return fetch(evt.request).then(nResponse => {
 
                         if (nResponse) {
                             return nResponse;
@@ -29,7 +28,7 @@ self.addEventListener('fetch', (e) => {
 
                         caches.open(staticCacheName)
                             .then(cache => {
-                                cache.put(e.request, nResponse);
+                                cache.put(evt.request, nResponse);
                             });
 
                         return nResponse.clone();
