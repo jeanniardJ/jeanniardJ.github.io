@@ -24,7 +24,7 @@ self.addEventListener("activate", (e) => {
 
 
 self.addEventListener('fetch', evt => {
-    console.log(evt)
+
     evt.respondWith(
         caches.match(evt.request).then(response => {
                 // Cache hit - return response
@@ -32,8 +32,8 @@ self.addEventListener('fetch', evt => {
                     return response;
                 }
 
-                return fetch(response.request).then(nResponse => {
-
+                return fetch(evt.request).then(nResponse => {
+                    console.log(evt.request)
                         if (nResponse) {
                             return nResponse;
                         }
