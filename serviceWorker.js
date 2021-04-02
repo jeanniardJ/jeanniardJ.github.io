@@ -18,10 +18,10 @@ self.addEventListener('fetch', (e) => {
                     return response;
                 }
 
-                return fetch(e.request).then(response => {
+                return fetch(e.request).then(nResponse => {
 
-                        if (response) {
-                            return response;
+                        if (nResponse) {
+                            return nResponse;
                         }
 
                         // IMPORTANT: Même constat qu'au dessus, mais pour la mettre en cache
@@ -29,10 +29,10 @@ self.addEventListener('fetch', (e) => {
 
                         caches.open(staticCacheName)
                             .then(cache => {
-                                cache.put(e.request, response);
+                                cache.put(e.request, nResponse);
                             });
 
-                        return response;
+                        return nResponse.clone();
                     }
                 );
             })
