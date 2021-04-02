@@ -27,9 +27,7 @@ self.addEventListener('fetch', evt => {
 
 
                         caches.open(staticCacheName)
-                            .then(cache => {
-                                cache.put(evt.request, nResponse);
-                            });
+                            .then(cache => cache.put(evt.request, nResponse));
 
                         return nResponse.clone();
                     }
