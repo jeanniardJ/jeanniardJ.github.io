@@ -18,12 +18,7 @@ self.addEventListener('fetch', (e) => {
                     return response;
                 }
 
-                // IMPORTANT: Cloner la requête.
-                // Une requete est un flux et est à consommation unique
-                // Il est donc nécessaire de copier la requete pour pouvoir l'utiliser et la servir
-                var fetchRequest = e.request.clone();
-
-                return fetch(fetchRequest).then(response => {
+                return fetch(e.request).then(response => {
 
                         if (response) {
                             return response;
