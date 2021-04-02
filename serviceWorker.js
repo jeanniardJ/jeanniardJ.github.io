@@ -3,10 +3,10 @@ const assets = ['index.html', 'assets/css/style.css', 'assets/images/bg.jpg'];
 
 self.addEventListener('install', (e) => {
     e.waitUntil(
-        caches.open(staticCacheName).then((cache) => {
+        caches.open(staticCacheName).then(cache => {
             return cache.addAll(assets);
         })
-    )
+    );
 });
 
 self.addEventListener('fetch', (e) => {
@@ -21,7 +21,7 @@ self.addEventListener('fetch', (e) => {
                 // IMPORTANT: Cloner la requête.
                 // Une requete est un flux et est à consommation unique
                 // Il est donc nécessaire de copier la requete pour pouvoir l'utiliser et la servir
-                var fetchRequest = e.request.clone();
+                let fetchRequest = e.request.clone();
 
                 return fetch(fetchRequest).then(
                     function (response) {
@@ -31,7 +31,7 @@ self.addEventListener('fetch', (e) => {
                         }
 
                         // IMPORTANT: Même constat qu'au dessus, mais pour la mettre en cache
-                        var responseToCache = response.clone();
+                        let responseToCache = response.clone();
 
                         caches.open(staticCacheName)
                             .then(function (cache) {

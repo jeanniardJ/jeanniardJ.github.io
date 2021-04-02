@@ -1,3 +1,3 @@
 if("serviceWorker" in navigator){
-    navigator.serviceWorker.register("assets/js/serviceWorker.js")
+    navigator.serviceWorker.register("serviceWorker.js")
 }
