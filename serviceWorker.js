@@ -9,7 +9,22 @@ self.addEventListener('install', (e) => {
     );
 });
 
+// supprimer caches
+self.addEventListener("activate", (e) => {
+    e.waitUntil(
+        caches.keys().then((keys) => {
+            return Promise.all(
+                keys
+                    .filter((key) => key !== staticCacheName)
+                    .map((key) => caches.delete(key))
+            )
+        })
+    );
+});
+
+
 self.addEventListener('fetch', evt => {
+    console.log(evt)
     evt.respondWith(
         caches.match(evt.request).then(response => {
                 // Cache hit - return response
@@ -35,15 +50,3 @@ self.addEventListener('fetch', evt => {
     );
 });
 
-// supprimer caches
-self.addEventListener("activate", (e) => {
-    e.waitUntil(
-        caches.keys().then((keys) => {
-            return Promise.all(
-                keys
-                    .filter((key) => key !== staticCacheName)
-                    .map((key) => caches.delete(key))
-            )
-        })
-    );
-});
