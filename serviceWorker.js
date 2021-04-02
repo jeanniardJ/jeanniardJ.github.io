@@ -23,19 +23,18 @@ self.addEventListener('fetch', (e) => {
                 // Il est donc nécessaire de copier la requete pour pouvoir l'utiliser et la servir
                 var fetchRequest = e.request.clone();
 
-                return fetch(fetchRequest).then(
-                    function (response) {
+                return fetch(fetchRequest).then(response => {
 
-                        if (!response || response.status !== 200 || response.type !== 'basic') {
+                        if (response) {
                             return response;
                         }
 
                         // IMPORTANT: Même constat qu'au dessus, mais pour la mettre en cache
-                        var responseToCache = response.clone();
+
 
                         caches.open(staticCacheName)
                             .then(cache => {
-                                return cache.put(e.request, responseToCache);
+                                cache.put(e.request, response);
                             });
 
                         return response;
