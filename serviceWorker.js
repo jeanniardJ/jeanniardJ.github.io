@@ -21,7 +21,7 @@ self.addEventListener('fetch', (e) => {
                 // IMPORTANT: Cloner la requête.
                 // Une requete est un flux et est à consommation unique
                 // Il est donc nécessaire de copier la requete pour pouvoir l'utiliser et la servir
-                let fetchRequest = e.request.clone();
+                var fetchRequest = e.request.clone();
 
                 return fetch(fetchRequest).then(
                     function (response) {
@@ -34,7 +34,7 @@ self.addEventListener('fetch', (e) => {
                         var responseToCache = response.clone();
 
                         caches.open(staticCacheName)
-                            .then(function (cache) {
+                            .then(cache => {
                                 cache.put(e.request, responseToCache);
                             });
 
