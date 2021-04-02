@@ -1,5 +1,5 @@
 const staticCacheName = "cache-v1";
-const assets = ['index.html', 'assets/css/style.css', 'assets/images/bg.jpg'];
+const assets = ['/index.html', '/assets/css/style.css', '/assets/images/bg.jpg'];
 
 self.addEventListener('install', (e) => {
     e.waitUntil(
@@ -26,8 +26,7 @@ self.addEventListener('fetch', evt => {
                         // IMPORTANT: Même constat qu'au dessus, mais pour la mettre en cache
 
 
-                        caches.open(staticCacheName)
-                            .then(cache => cache.put(evt.request, nResponse));
+                        caches.open(staticCacheName).then(cache => cache.put(evt.request, nResponse));
 
                         return nResponse.clone();
                     }
