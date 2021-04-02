@@ -31,7 +31,7 @@ self.addEventListener('fetch', (e) => {
                         }
 
                         // IMPORTANT: Même constat qu'au dessus, mais pour la mettre en cache
-                        let responseToCache = response.clone();
+                        var responseToCache = response.clone();
 
                         caches.open(staticCacheName)
                             .then(function (cache) {
