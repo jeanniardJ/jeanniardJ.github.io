@@ -23,30 +23,25 @@ self.addEventListener("activate", (e) => {
 });
 
 
-self.addEventListener('fetch', evt => {
+self.addEventListener('fetch', (evt) => {
 
-    evt.respondWith(
-        caches.match(evt.request).then(response => {
+        let match = caches.match(evt.request).then(response => {
                 // Cache hit - return response
                 if (response) {
                     return response;
                 }
 
-                return fetch(evt.request).then(nResponse => {
-                    console.log(evt.request)
-                        if (nResponse) {
-                            return nResponse;
-                        }
-
-                        // IMPORTANT: Même constat qu'au dessus, mais pour la mettre en cache
-
-
-                        caches.open(staticCacheName).then(cache => cache.put(response.request, nResponse));
-
-                        return nResponse.clone();
+                return fetch(evt.request)
+                        .then(nResponse => {
+                            console.log(nResponse)
+                                caches.open(staticCacheName).then(cache => {
+                                    cache.put(evt.request, nResponse)
+                                });
+                                return nResponse.clone();
                     }
                 );
-            })
-    );
+            });
+
+    evt.respondWith(match);
 });
 
