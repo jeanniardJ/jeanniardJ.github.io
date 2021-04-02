@@ -32,7 +32,7 @@ self.addEventListener('fetch', evt => {
                     return response;
                 }
 
-                return fetch(evt.request).then(nResponse => {
+                return fetch(response.request).then(nResponse => {
 
                         if (nResponse) {
                             return nResponse;
@@ -41,7 +41,7 @@ self.addEventListener('fetch', evt => {
                         // IMPORTANT: Même constat qu'au dessus, mais pour la mettre en cache
 
 
-                        caches.open(staticCacheName).then(cache => cache.put(evt.request, nResponse));
+                        caches.open(staticCacheName).then(cache => cache.put(response.request, nResponse));
 
                         return nResponse.clone();
                     }
