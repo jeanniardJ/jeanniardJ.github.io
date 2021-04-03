@@ -36,3 +36,4 @@ plugins:
   - jekyll-seo-tag
   - jekyll-github-metadata
   - jekyll-autoprefixer
+  - jekyll-sitemap
