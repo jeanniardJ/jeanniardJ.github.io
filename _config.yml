@@ -5,6 +5,7 @@ title: "Jjeanniard" # the name of your site, e.g. ACME Corp.
 tagline: "Portfolio" #bref desc
 description: "Ceci est mon expérience dans le développement, qui est représenté par une liste de projet et de technologie utilisé, sur lesquels j'ai participé ou que je réalise dans tout type de langages." #desc
 initiale: "Jjeanniard"
+logo: "assets/images/jj_logo_blanc.png"
 
 google_analytics: "UA-8529534-11"
 

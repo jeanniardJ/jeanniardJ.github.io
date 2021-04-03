@@ -33,7 +33,6 @@ self.addEventListener('fetch', (evt) => {
 
                 return fetch(evt.request)
                         .then(nResponse => {
-                            console.log(nResponse)
                                 caches.open(staticCacheName).then(cache => {
                                     cache.put(evt.request, nResponse)
                                 });
