@@ -1,0 +1,41 @@
+{
+  "name": "JJeanniard.github.io",
+  "version": "1.0.0",
+  "description": "Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode development --watch",
+    "prod": "webpack --mode production "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JJeanniard/JJeanniard.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JJeanniard/JJeanniard.github.io/issues"
+  },
+  "homepage": "https://github.com/JJeanniard/JJeanniard.github.io#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "@babel/preset-env": "^7.13.15",
+    "babel-loader": "^8.2.2",
+    "postcss": "^8.2.12",
+    "postcss-loader": "^5.2.0",
+    "sass": "^1.32.11",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.35.1",
+    "webpack-cli": "^4.6.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.9.2",
+    "autoprefixer": "^10.2.5",
+    "bootstrap": "^5.0.0-beta3",
+    "css-loader": "^5.2.4",
+    "postcss-cli": "^8.3.1",
+    "tarteaucitronjs": "^1.9.0"
+  }
+}

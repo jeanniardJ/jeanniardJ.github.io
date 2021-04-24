@@ -29,10 +29,6 @@ social:
 
 google_site_verification: "DSASZ6zc7H0_tdnnA8l485-hj7aG8-1lS1s0WbAtUvI"
 
-sass:
-  sass_dir: _sass
-  style: compressed
-
 plugins:
   - jekyll-seo-tag
   - jekyll-github-metadata
