@@ -1,6 +1,7 @@
 const path = require('path');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const WorkboxPlugin = require('workbox-webpack-plugin');
+const {InjectManifest} = require('workbox-webpack-plugin');
 const dev = process.env.NODE_ENV === "dev";
 
 let config = {
@@ -9,7 +10,7 @@ let config = {
     watch: dev,
     output: {
         filename: "app.js",
-        path: path.resolve(__dirname, "./assets")
+        path: path.resolve(__dirname, "./")
     },
     devtool: dev ? "eval-cheap-module-source-map" : false,
     module: {
@@ -69,15 +70,15 @@ let config = {
     },
     plugins: [
         new WorkboxPlugin.GenerateSW({
-        // these options encourage the ServiceWorkers to get in there fast
-        // and not allow any straggling "old" SWs to hang around
-        clientsClaim: true,
-        skipWaiting: true,
-      })
+            // these options encourage the ServiceWorkers to get in there fast
+            // and not allow any straggling "old" SWs to hang around
+            clientsClaim: true,
+            skipWaiting: true,
+        })
     ]
 };
 
-if(!dev){
+if (!dev) {
     config.plugins.push(new UglifyJsPlugin())
 }
 
