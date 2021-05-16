@@ -1,4 +1,4 @@
-const staticCacheName = "cache-v1";
+const staticCacheName = "cache-v2";
 const assets = ['/index.html', '/assets/css/style.css', '/assets/images/bg.jpg'];
 
 self.addEventListener('install', (e) => {
