@@ -1,5 +1,6 @@
 const path = require('path');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+const WorkboxPlugin = require('workbox-webpack-plugin');
 const dev = process.env.NODE_ENV === "dev";
 
 let config = {
@@ -66,7 +67,14 @@ let config = {
             }
         ]
     },
-    plugins: []
+    plugins: [
+        new WorkboxPlugin.GenerateSW({
+        // these options encourage the ServiceWorkers to get in there fast
+        // and not allow any straggling "old" SWs to hang around
+        clientsClaim: true,
+        skipWaiting: true,
+      })
+    ]
 };
 
 if(!dev){
