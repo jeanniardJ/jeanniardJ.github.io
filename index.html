@@ -1,41 +1,39 @@
 ---
 layout: default
 ---
-<main>
-    <section id="presentation" class="py-5 text-center text-white">
-        <div class="container">
-            <div class="row py-lg-5">
-                <div class="col-lg-6 col-md-8 mx-auto">
-                    <div class="p-5 bg-grey bg-gradient rounded-3 shadow-sm">
-                        <h1 class="fw-light">Jonathan Jeanniard</h1>
-                        <p class="lead fw-bold">Tombé dans la marmite du monde de l'informatique, je suis devenu
-                            développeur web / web mobile, et plus spécialement dans le back-end.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="skills" class="bg-light">
-        <div class="container p-3">
-            <div class="shadow m-3 rounded-3">
-                <h1 class="text-center text-uppercase text-orange fw-bold mt-3">Compétences</h1>
-                <hr class="bg-orange">
-                <!-- TODO : correction de justify en point de cassure de 360-->
-                <div class="row justify-content-center p-4">
-                    {% include skill.html %}
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="realisation" class="bg-orange">
-        <div class="container p-3">
-            <div class="shadow m-3 rounded-3 bg-light">
-                <h1 class="text-center text-uppercase text-orange fw-bold mt-3">Mes projets</h1>
-                <hr class="bg-orange">
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-2 p-3">
 
-                </div>
-            </div>
-        </div>
-    </section>
+<main id="main">
+
+	<section id="presentation" class="container-fluid bg-blue-1 mt-5 p-0">
+		<div class="presentation_text container p-5">
+			<p class="text-blue-0">Bonjour, je suis</p>
+			<h1 class="text-white">Jonathan Jeanniard</h1>
+			<p class="text-white"><strong>Développeur web <br /> & web mobile</strong></p>
+		</div>
+		<div id="logo" class="overflow-hidden">
+			<div class="logo_txt">
+				<p>JJ</p>
+			</div>
+		</div>
+	</section>
+	<section id="skills" class="container-fluid bg-blue-2">
+		<div class="contenu pt-5 pb-5">
+			{% include skill.html %}
+		</div>
+	</section>
+	{% if site.posts > 0 %}
+	<section id="realisation">
+		<h1>Mes projets</h1>
+		{% for post in site.posts %}
+
+		{% endfor %}
+		<hr>
+	</section>
+	{% endif %}
+	<section id="services">
+
+	</section>
+	<section id="link">
+		<h1></h1>
+	</section>
 </main>

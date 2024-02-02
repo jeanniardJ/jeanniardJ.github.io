@@ -14,3 +14,4 @@ group :jekyll_plugins do
   gem "jekyll-seo-tag", "~> 2.6"
   gem "jekyll-autoprefixer"
 end
+gem "webrick", "~> 1.7"

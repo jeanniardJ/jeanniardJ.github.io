@@ -1,30 +1,33 @@
 <header class="fixed-top">
-    <div class="bg-dark collapse" id="navbarNav">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-8 col-md-7 py-4">
-                    <h4 class="text-white">About</h4>
-                    <p class="text-muted">{{ site.description }}</p>
-                </div>
-                <div class="col-sm-4 offset-md-1 py-4">
-                    <h4 class="text-white">Contact</h4>
-                    <ul class="list-unstyled">
-                        <li><a href="{{ site.social.links[0] }}" class="text-white">Twitter</a></li>
-                        <li><a href="{{ site.social.links[1] }}" class="text-white">Linkedin</a></li>
-                        <li><a href="{{ site.social.links[2] }}" class="text-white">Github</a></li>
-                    </ul>
+    <section class="collapse" id="navbarContent">
+        <div class="bg-blue-1 p-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <h1 class="text-white">&Agrave propos</h1>
+                        <p class="text-white">{{ site.description }}</p>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <h1 class="text-white">Contact</h1>
+                        <ul class="list-unstyled">
+                            <li><a href="{{ site.social.links[0] }}" class="text-white">Twitter</a></li>
+                            <li><a href="{{ site.social.links[1] }}" class="text-white">Linkedin</a></li>
+                            <li><a href="{{ site.social.links[2] }}" class="text-white">Github</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <nav class="navbar navbar-dark bg-dark shadow-sm">
+    </section>
+    <nav class="navbar navbar-blue-2 bg-blue-2">
         <div class="container container-fluid">
-            <a href="https://jonathanjeanniard.me" class="navbar-brand">
-                <img src="./images/jj_logo_blanc.png" alt="logo jj" width="30" height="30">
+            <a class="navbar-brand" href="https://jonathanjeanniard.me">
                 {{ site.initiale | capitalize }}
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
