@@ -1,45 +1,42 @@
 {
-  "name": "JJeanniard.github.io",
-  "version": "1.0.0",
-  "description": "Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.",
-  "private": true,
-  "scripts": {
-    "dev": "set NODE_ENV=dev&&webpack",
-    "prod": "webpack"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JJeanniard/JJeanniard.github.io.git"
-  },
-  "keywords": [],
-  "author": "jonathan jeanniard <contact@jonathanjeanniard.me>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/JJeanniard/JJeanniard.github.io/issues"
-  },
-  "homepage": "https://github.com/JJeanniard/JJeanniard.github.io#readme",
-  "devDependencies": {
-    "@babel/core": "^7.14.3",
-    "@babel/preset-env": "^7.14.4",
-    "babel-loader": "^8.2.2",
-    "exports-loader": "^2.0.0",
-    "file-loader": "^6.2.0",
-    "gdpr-consent": "^1.0.1",
-    "postcss": "^8.3.0",
-    "postcss-loader": "^5.3.0",
-    "sass": "^1.34.1",
-    "sass-loader": "^11.1.1",
-    "style-loader": "^2.0.0",
-    "uglifyjs-webpack-plugin": "^2.2.0",
-    "webpack": "^5.38.1",
-    "webpack-cli": "^4.7.0",
-    "workbox-webpack-plugin": "^6.1.5"
-  },
-  "dependencies": {
-    "@popperjs/core": "^2.9.2",
-    "autoprefixer": "^10.2.6",
-    "bootstrap": "^5.0.1",
-    "css-loader": "^5.2.6",
-    "postcss-cli": "^8.3.1"
-  }
+    "name": "jeanniardj.github.io",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@testing-library/jest-dom": "^5.17.0",
+        "@testing-library/react": "^13.4.0",
+        "@testing-library/user-event": "^13.5.0",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-scripts": "5.0.1",
+        "web-vitals": "^2.1.4"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject",
+        "deploy": "gh-pages -d build"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "gh-pages": "^6.1.1"
+    }
 }
