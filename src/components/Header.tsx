@@ -1,24 +1,42 @@
-import Navigator from './Navigator';
+import React from "react";
+import { Container } from "react-bootstrap";
+
+import Navigator from "./Navigator";
 
 export default function Header() {
   return (
-    <header className='text-white'>
+    <header>
       <Navigator />
-      <section className='container mx-auto mt-20 px-12'>
-        <div className="pt-5 flex justify-between flex-wrap">
-          <div className="pt-5 flex justify-between items-center w-100">
-            <div className='w-25 h-25'><img src="./images/jj_logo_blanc.png" alt="" /></div>
-            <div>
-              <h2>Jonathan</h2>
-              <p>Ingénieur d’applications informatiques</p>
-            </div>
-          </div>
-          <div className='mt-5'>
-            <h1 className='text-2xl font-bold'>En alternance Informatique et Système d'information</h1>
-            <p className='mt-10'>Passionné par l'informatique et les systèmes d'information, je suis actuellement à la recherche d'une opportunité en alternance. Mon parcours et mes compétences reflètent mon engagement envers le domaine de l'IT. À la recherche d'un environnement propice au développement de mes compétences, je suis prêt à contribuer de manière significative tout en acquérant une expérience enrichissante. Mon objectif est de participer activement à des projets innovants et de mettre en pratique mes connaissances dans le cadre d'une alternance dynamique.</p>
-          </div>
+      <Container id="about" className="mx-auto">
+        <div className="row">
+			<div className="d-flex justify-content-start align-items-stretch flex-wrap">
+				<div>
+					<img src="./images/jj_logo_blanc.png" alt="" />
+				</div>
+				<div>
+					<h2>Jonathan</h2>
+					<p>Développeur Web et Web Mobile</p>
+				</div>
+			</div>
+			<div className="mt-5">
+				<h1 className="text-2xl font-bold">
+					Freelance en réalisation de sites web sur mesure.
+				</h1>
+				<p className="mt-10">
+					En tant que freelance en création de sites web sur mesure, je suis
+					passionné par la conception et le développement numérique. Mon
+					objectif est de fournir des solutions uniques et personnalisées à
+					mes clients, en mettant en œuvre mes compétences en développement
+					web. Fort de mon expérience, je m'efforce de créer des sites web
+					qui répondent aux besoins spécifiques de chaque client tout en
+					offrant une expérience utilisateur optimale. Mon engagement envers
+					mon travail se reflète dans chaque projet que je réalise, et je
+					suis constamment à la recherche de nouvelles opportunités pour
+					développer mes compétences et offrir des solutions innovantes.
+				</p>
+			</div>
         </div>
-      </section>
+      </Container>
     </header>
   );
-};
+}

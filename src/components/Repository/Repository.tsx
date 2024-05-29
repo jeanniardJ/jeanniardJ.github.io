@@ -1,50 +1,90 @@
-import React, { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
-import axios from 'axios';
+import React, { useEffect, useState } from "react";
 
-export default function Repository() {
-    const [repos, setRepos] = useState<any>([]);
+import { Card, Button } from "react-bootstrap";
 
+import Repository from "../../models/Repository";
+
+async function fetchRepositories() : Promise<Repository[]>
+{
+
+    const response = await fetch(
+        "https://api.github.com/users/jeanniardJ/repos"
+    );
+
+    const data = await response.json();
+    const rowData = data.filter(
+        (repo: any) =>
+            !repo.fork &&
+            !repo.private &&
+            !repo.archived &&
+            !repo.disabled &&
+            !repo.name.includes("jeanniardJ.github.io") &&
+            repo.description !== null
+    );
+
+    const repositories = await Promise.all(rowData.map(async (repo: any) => {
+        let imageData = "./images/blank/blank_img_150.png";
+        const imageUrl = `https://raw.githubusercontent.com/jeanniardJ/${repo.name}/main/${repo.name}.png`;
+
+        await fetch(imageUrl)
+        .then((response) => {
+            if (response.ok && response.status === 200) {
+                return (imageData = imageUrl);
+            }
+        })
+        .catch((error) => {
+            console.error(error);
+        });
+
+        return new Repository(
+            repo.name,
+            repo.description,
+            repo.html_url,
+            imageData
+        );
+    }));
+
+    return repositories as Repository[];
+}
+
+function LayoutCars() {
+
+    const [repos, setRepos] = useState<Repository[]>([]);
     useEffect(() => {
-        axios.get('https://api.github.com/users/jeanniardJ/repos')
-            .then(response => {
-                setRepos(response.data);
-            })
-            .catch(error => {
-                console.error('Erreur lors de la récupération des dépôts :', error);
-            });
+        fetchRepositories().then((repositories) => {
+            setRepos(repositories);
+        });
     }, []);
 
-    const sectionVariants = {
-        hidden: { opacity: 0 },
-        visible: { opacity: 1 },
-    };
+    return (<div className="row row-cols-1 row-cols-md-2 g-3">
+        {repos.map((repo: Repository, index: number) => (
+        <div className="col-md-6" key={index}>
+            <Card>
+                <Card.Body>
+                    <Card.Title>{repo.getName()}</Card.Title>
+                    <div className="row">
+                        <Card.Text className="w-75">
+                            {repo.description}
+                        </Card.Text>
+                        <Card.Img src={repo.getImage()} alt={repo.getName()} className="w-25 h-25"/>
+                    </div>          
+                </Card.Body>
+                <Card.Footer>
+                    <Button href={repo.html_url} target="_blank" rel="noreferrer">
+                        Voir le dépôt
+                    </Button>
+                </Card.Footer>
+            </Card>
+        </div>
+    ))}
+    </div>);
+}
 
-    const itemVariants = {
-        hidden: { opacity: 0, y: 30 },
-        visible: { opacity: 1, y: 0 },
-    };
-
+export default function ListRepository() {
     return (
-        <motion.section
-            id='repo'
-            className='flex flex-wrap gap-36'
-            variants={sectionVariants}
-            initial='hidden'
-            animate='visible'
-        >
-            {repos.map((repo: any) => (
-                <motion.div
-                    key={repo.id}
-                    className='mb-10'
-                    variants={itemVariants}
-                >
-                    <h3 className='text-5xl font-semibold mb-5'>{repo.name}</h3>
-                    <div className='desc w-96 rounded-md p-5'>
-                        <p>{repo.description}</p>
-                    </div>
-                </motion.div>
-            ))}
-        </motion.section>
+        <div id="repository">
+            <h2 className="text-start text-white mb-5">Mes projets</h2>
+            <LayoutCars/>
+        </div>
     );
 }

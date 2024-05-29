@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "./", // Add this line
     "target": "es5",
     "lib": [
       "dom",
@@ -17,7 +18,7 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx", // Utilisez 'react-jsx' pour TypeScript 4.1 et versions ultérieures
+    "jsx": "react", // or "react-jsxdev"
     "esModuleInterop": true
   },
   "include": [

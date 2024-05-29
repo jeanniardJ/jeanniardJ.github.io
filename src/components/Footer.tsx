@@ -1,10 +1,17 @@
-import React from 'react';
+import React from "react";
+
+import { Container } from "react-bootstrap";
 
 export default function Footer() {
-  return (
-    <footer>
-
-    </footer>
-  );
-};
-
+    return (
+        <footer className="mt-5">
+            <Container>
+                <div className="d-flex justify-content-center align-items-center">
+                    <p className="text-center">
+                        &copy; {new Date().getFullYear()} Jonathan Jeanniard, All rights reserved.
+                    </p>
+                </div>
+            </Container>
+        </footer>
+    );
+}

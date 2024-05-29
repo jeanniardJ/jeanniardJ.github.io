@@ -1,37 +1,25 @@
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
-@import "tailwindcss/variants";
+@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap-icons/font/bootstrap-icons';
+@import '~devicon';
 
-$clr-primary: #693b93;
-$clr-secondary: #1a0b2e;
-$clr-tertiary: #251c31;
-$clr-body: #11071f;
-$clr-quaternary: #f3f3f3;
+@import 'abstracts/variables';
+
+@import 'components/button';
+@import 'components/navbar';
+@import 'components/card';
+
+@import 'components/skills';
+@import 'components/repository';
+@import 'components/contact';
+
+@import 'layout/header';
+@import 'layout/main';
+@import 'layout/footer';
+
+@import 'pages/home';
+
+@import 'themes/theme-default';
 
 #root {
     background-color: $clr-body;
-    header {
-        nav {
-            background-color: $clr-secondary;
-        }
-    }
-
-    main {
-        #repo {
-            .desc {
-                border: solid 1px $clr-primary;
-                background-color: rgba(
-                    $clr-primary,
-                    0.1
-                ); // Ajoutez l'opacité ici (0.5 représente 50% d'opacité)
-            }
-        }
-    }
-}
-
-.btn {
-    background-color: $clr-tertiary;
-    border: solid 2px $clr-primary;
-    border-radius: 10px;
 }
