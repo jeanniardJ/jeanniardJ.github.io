@@ -6,8 +6,8 @@ import ToastContextual from "../ToastContextual";
 export default function Contact() {
     const [validated, setValidated] = React.useState(false);
     const email = "jonathan@jja-dev.fr";
-    const api_url = "https://127.0.0.1:8000/contact/api?"
-    //const api_url = "https://jja-dev.fr/contact/api"
+    //const api_url = "https://127.0.0.1:8000/contact/api?"
+    const api_url = "https://jja-dev.fr/contact/api"
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         const form = event.currentTarget as HTMLFormElement;
