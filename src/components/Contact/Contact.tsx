@@ -1,15 +1,21 @@
 import React from "react";
-
 import { Button, Container, Form, Col, Card } from "react-bootstrap";
 
-import ToastService from "../Toast";
+import ToastContextual from "../ToastContextual";
 
 export default function Contact() {
     const [validated, setValidated] = React.useState(false);
     const email = "jonathan@jja-dev.fr";
+    const api_url = "https://127.0.0.1:8000/contact/api?"
+    //const api_url = "https://jja-dev.fr/contact/api"
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         const form = event.currentTarget as HTMLFormElement;
+        
+        if(process.env.NODE_ENV === "development") {
+            console.log("form", form);
+            console.log("form.checkValidity()", form.checkValidity());
+        }
 
         if (form.checkValidity() === false) {
             event.preventDefault();
@@ -18,52 +24,48 @@ export default function Contact() {
 
         setValidated(true);
 
-        console.log(event);
-
         if (form.checkValidity()) {
-            const formData = new FormData(form);
+            let formData = new FormData(form);
 
-            const name = formData.get("formName") as string;
-            const email = formData.get("formEmail") as string;
-            const message = formData.get("formMessage") as string;
+            console.debug("formData", formData.getAll("formName"));
 
-            console.log(name, email, message);
+            const objet = "Message from jonathanjeanniard.me";
+            let name = formData.get("formName") as string;
+            let email = formData.get("formEmail") as string;
+            let phone = formData.get("formPhone") as string;
+            let message = formData.get("formMessage") as string;
 
-            // Send email
-            fetch("https://jja-dev.fr/api/email", {
+            // Send email "https://jja-dev.fr/contact/api"
+            fetch(api_url, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
                 },
                 body: JSON.stringify({
-                    name,
-                    email,
-                    message,
+                    formObject: objet,
+                    formName: name,
+                    formEmail: email,
+                    formPhone: phone,
+                    formMessage: message,
                 }),
             })
                 .then((response) => {
-                    if (response.ok) {
-                        console.log("Email sent");
-                    } else {
-                        console.error("Email not sent");
+                    if(!response.ok) {
+                        throw new Error("Network response was not ok");
                     }
+                    return response.json();
                 })
                 .catch((error) => {
                     console.error("Error:", error);
+                    return error;
                 });
 
-            // Show toast
-            ToastService({
-                message: "Message sent",
-                showToast: true,
-                setShowToast: () => {},
-            });
-            
+            setValidated(false);
+
+            form.reset();
+    
         }
 
-        event.preventDefault();
-
-        form.reset();
     };
 
     return (
@@ -123,6 +125,7 @@ export default function Contact() {
                             <Form.Label>Name:</Form.Label>
                             <Form.Control
                                 type="text"
+                                name="formName"
                                 placeholder="Enter your name"
                                 required
                             />
@@ -135,8 +138,21 @@ export default function Contact() {
                             <Form.Label>Email:</Form.Label>
                             <Form.Control
                                 type="email"
+                                name="formEmail"
                                 placeholder="Enter your email"
                                 required
+                            />
+                        </Form.Group>
+                        <Form.Group
+                            controlId="formPhone"
+                            className="mb-3"
+                            as={Col}
+                        >
+                            <Form.Label>Phone:</Form.Label>
+                            <Form.Control
+                                type="tel"
+                                name="formPhone"
+                                placeholder="Enter your phone number"
                             />
                         </Form.Group>
                         <Form.Group controlId="formMessage" className="mb-3">
@@ -144,6 +160,7 @@ export default function Contact() {
                             <Form.Control
                                 as="textarea"
                                 rows={5}
+                                name="formMessage"
                                 placeholder="Enter your message"
                                 required
                             />
