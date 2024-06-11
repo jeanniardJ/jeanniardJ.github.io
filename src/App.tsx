@@ -5,7 +5,6 @@ import "./assets/App.scss";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
-import ToastContextual from './components/ToastContextual';
 
 function App() {
 
@@ -14,7 +13,6 @@ function App() {
             <Header />
             <Main />
             <Footer />
-            <ToastContextual />
         </div>
     );
 }

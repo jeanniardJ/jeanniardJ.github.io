@@ -1,50 +1,29 @@
 import React, { useEffect } from 'react';
 
-import { Toast } from "react-bootstrap";
+import { Button, Toast, ToastContainer } from "react-bootstrap";
 
-export function setToastMessage(message: string) {
-    return (
-        <Toast
-            show={true}
-            onClose={() => {}}
-            delay={3000}
-            autohide
-            style={{
-                position: "absolute",
-                top: 0,
-                right: 0,
-            }}
-        >
-            <Toast.Body>{message}</Toast.Body>
-        </Toast>
-    );
-}
 
-export default function ToastContextual() {
-    const [show, setShow] = React.useState(false);
-
-    useEffect(() => {
-        const timer = setTimeout(() => setShow(true), 3000);
-
-        return () => {
-            clearTimeout(timer);
-        };
-    }, []);
+export default function ToastContextual({ message, type = "info"}: { message: string, type: string} )
+{
+    const [show, setShow] = React.useState(true);
 
     return (
-        <Toast
-            show={show}
-            onClose={() => setShow(false)}
-            delay={3000}
-            autohide
-            style={{
-                position: "absolute",
-                top: 0,
-                right: 0,
-            }}
+        <ToastContainer 
+            position="bottom-end" 
+            className='p-3' 
+            style={{ position: "fixed" }}
         >
-            <Toast.Body>Hello, world! This is a toast message.</Toast.Body>
-        </Toast>
+            <Toast
+                show={show}
+                delay={3000} 
+                autohide
+                bg={type}
+                onClose={() => setShow(false)}
+            >
+                <Toast.Body>
+                {message}
+                </Toast.Body>
+            </Toast>
+        </ToastContainer>
     );
 }
-

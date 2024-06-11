@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button, Container, Form, Col, Card } from "react-bootstrap";
 
 import ToastContextual from "../ToastContextual";
 
 export default function Contact() {
-    const [validated, setValidated] = React.useState(false);
+    const [validated, setValidated] = useState(false);
+    const [show, setShow] = useState(false);
+    const [message, setMessage] = useState("");
+    const [typeMsg, setTypeMsg] = useState("info");
+
     const email = "jonathan@jja-dev.fr";
     //const api_url = "https://127.0.0.1:8000/contact/api?"
     const api_url = "https://jja-dev.fr/contact/api"
@@ -51,19 +55,31 @@ export default function Contact() {
             })
                 .then((response) => {
                     if(!response.ok) {
+                        setTypeMsg("danger");
+                        setMessage("Error: " + response.statusText);
+                        setShow(true);
+
                         throw new Error("Network response was not ok");
                     }
+
                     return response.json();
                 })
                 .catch((error) => {
                     console.error("Error:", error);
+                    setTypeMsg("danger");
+                    setMessage("Error: " + error);
+                    setShow(true);
+
                     return error;
                 });
 
-            setValidated(false);
+            setTypeMsg("success");
+            setMessage("Your message has been sent successfully.");
+            setShow(true);
 
             form.reset();
-    
+
+            setValidated(false);
         }
 
     };
@@ -169,6 +185,9 @@ export default function Contact() {
                     </Form>
                 </div>
             </Card>
+            {show && (
+                <ToastContextual message={message} type={typeMsg} />
+            )}
         </Container>
     );
 }
