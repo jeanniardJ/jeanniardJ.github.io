@@ -8,7 +8,7 @@ export default function Footer() {
             <Container>
                 <div className="d-flex justify-content-center align-items-center">
                     <p className="text-center">
-                        &copy; {new Date().getFullYear()} Jonathan Jeanniard at <a href="https://jja-dev.fr">jja-dev.fr</a>, All rights reserved.
+                        &copy; {new Date().getFullYear()} Jonathan Jeanniard on <a href="https://jja-dev.fr">jja-dev.fr</a>, All rights reserved.
                     </p>
                 </div>
             </Container>
