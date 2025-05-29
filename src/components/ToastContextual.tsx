@@ -1,6 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
-import { Button, Toast, ToastContainer } from "react-bootstrap";
+import { Toast, ToastContainer } from "react-bootstrap";
 
 
 export default function ToastContextual({ message, type = "info"}: { message: string, type: string} )

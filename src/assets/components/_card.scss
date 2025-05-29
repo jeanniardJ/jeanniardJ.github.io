@@ -1,12 +1,11 @@
 //1 em = 16px, 2em = 32px, 3em = 48px, 4em = 64px, 5em = 80px, 6em = 96px, 7em = 112px, 8em = 128px, 9em = 144px, 10em = 160px, 11em = 176px, 12em = 192px, 13em = 208px, 14em = 224px, 15em = 240px, 16em = 256px, 17em = 272px, 18em = 288px, 19em = 304px, 20em = 320px
 
 .card {
-    border-top: 0.3rem solid $clr-primary;
+    border-top: 0.2rem solid $clr-primary;
     background-color: $clr-secondary;
     min-height: 12rem;
-    
+    border-radius: 1.3rem;
     .card-footer {
         border: none;
     }
 }
-

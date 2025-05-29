@@ -10,6 +10,7 @@ Bienvenue sur le dépôt de mon portfolio ! Vous pouvez explorer mes projets, co
 - jQuery
 - Jekyll
 - Ruby
+- React
 
 ## 📱 Contact
 
@@ -19,7 +20,6 @@ N'hésitez pas à me contacter pour discuter de projets, opportunités ou simple
 - 🌐 Site Web : [jja-dev.fr](https://jja-dev.fr)
 - 👔 LinkedIn : [Jonathan Jeanniard](https://www.linkedin.com/in/jonathan-jeanniard/)
 - 📧 Mail : [Contact](mailto:contact@jja-dev.fr)
-- 📊 Malt : [Profil Malt](https://www.malt.fr/profile/jonathanjeanniard)
 
 ## 📜 Licence
 
