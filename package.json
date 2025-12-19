@@ -1,68 +1,31 @@
 {
-    "name": "jonathanjeanniard.me",
-    "version": "0.1.0",
-    "private": true,
-    "homepage": "https://jonathanjeanniard.me/",
-    "dependencies": {
-        "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-        "@emotion/react": "^11.11.3",
-        "@emotion/styled": "^11.11.0",
-        "@fontsource/roboto": "^5.0.8",
-        "@testing-library/jest-dom": "^5.17.0",
-        "@testing-library/react": "^13.4.0",
-        "@testing-library/user-event": "^13.5.0",
-        "@types/d3": "^7.4.3",
-        "@types/react": "^18.2.55",
-        "@types/react-dom": "^18.2.19",
-        "axios": "^1.6.7",
-        "bootstrap": "^5.3.6",
-        "bootstrap-icons": "^1.11.3",
-        "d3": "^7.9.0",
-        "d3-cloud": "^1.2.7",
-        "devicon": "^2.16.0",
-        "framer-motion": "^11.0.6",
-        "node-sass": "^9.0.0",
-        "react": "18.3",
-        "react-bootstrap": "^2.1.2",
-        "react-dom": "18.3",
-        "react-draggable": "^4.4.6",
-        "react-helmet": "^6.1.0",
-        "react-hexgrid": "^2.0.1",
-        "react-router-dom": "^6.22.1",
-        "react-scripts": "^5.0.1",
-        "react-scroll": "^1.9.0",
-        "web-vitals": "^2.1.4"
-    },
-    "scripts": {
-        "start": "react-scripts start",
-        "build": "react-scripts build",
-        "test": "react-scripts test",
-        "eject": "react-scripts eject",
-        "deploy": "gh-pages -d build"
-    },
-    "eslintConfig": {
-        "extends": [
-            "react-app",
-            "react-app/jest"
-        ]
-    },
-    "browserslist": {
-        "production": [
-            ">0.2%",
-            "not dead",
-            "not op_mini all"
-        ],
-        "development": [
-            "last 1 chrome version",
-            "last 1 firefox version",
-            "last 1 safari version"
-        ]
-    },
-    "devDependencies": {
-        "@types/d3-cloud": "^1.2.9",
-        "eslint": "^8.0.0",
-        "eslint-config-react-app": "^7.0.1",
-        "gh-pages": "^6.1.1",
-        "typescript": "^3.9.10"
-    }
+  "name": "jeanniardj-github-io",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://jonathanjeanniard.me/",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "deploy": "next build && rm -rf build && mv out build && gh-pages -d build",
+    "gh-pages": "gh-pages -d build"
+  },
+  "dependencies": {
+    "lucide-react": "^0.561.0",
+    "next": "16.0.10",
+    "react": "19.2.1",
+    "react-dom": "19.2.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9.39.2",
+    "eslint-config-next": "16.0.10",
+    "gh-pages": "^5",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
 }

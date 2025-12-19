@@ -21,3 +21,16 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+.vscode
+
+# next.js
+.next
+out
+.cache
+.vercel
+.now
+.env
+.terraform
+.terraform.lock.hcl
+.idea
