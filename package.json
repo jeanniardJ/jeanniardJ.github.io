@@ -1,5 +1,5 @@
 {
-  "name": "jeanniardj-github-io",
+  "name": "jonathanjeanniard.me",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://jonathanjeanniard.me/",
@@ -8,8 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "deploy": "next build && rm -rf build && mv out build && gh-pages -d build",
-    "gh-pages": "gh-pages -d build"
+    "deploy": "next build && touch build/.nojekyll && gh-pages -d build -t true"
   },
   "dependencies": {
     "lucide-react": "^0.561.0",

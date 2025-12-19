@@ -34,3 +34,6 @@ out
 .terraform
 .terraform.lock.hcl
 .idea
+
+# Gemini files
+.gemini
